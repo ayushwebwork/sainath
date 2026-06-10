@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sainath Sales & Services Pvt. Ltd. – Together for Better Future</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <style>
+    .translate-box{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:#2e3960;
+    border:0.5px solid rgba(255,255,255,0.8);
+    border-radius:50px;
+    padding:8px 14px;
+}
+
+.globe-icon{
+    width:20px;
+    height:20px;
+    color:rgba(255,255,255,0.8);
+}
+
+.translate-box select{
+    border:none;
+    outline:none;
+    background:#2e3960;
+    font-size:14px;
+    cursor:pointer;
+    color: rgba(255,255,255,0.8);
+}
+  </style>
+
+<!-- ===================== TOP HEADER ===================== -->
+<div id="top-header">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <div class="top-contacts d-flex flex-wrap gap-3">
+        <a href="tel:+911234567890"><i class="fas fa-phone-alt me-1"></i>+91 12345 67890</a>
+        <a href="mailto:info@sainathservices.com"><i class="fas fa-envelope me-1"></i>info@sainathservices.com</a>
+        <span><i class="fas fa-map-marker-alt me-1"></i>Mumbai, Maharashtra, India</span>
+      </div>
+      <div class="top-right d-flex align-items-center gap-3">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <!-- Language Toggler -->
+        <div class="lang-wrapper dropdown">
+          <!-- <button class="btn btn-sm lang-btn dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown">
+            <i class="fas fa-globe me-1"></i><span id="currentLang">EN</span>
+          </button>
+           <ul class="dropdown-menu dropdown-menu-end lang-dropdown" aria-labelledby="langDropdown">
+            <li><a class="dropdown-item lang-item" href="#" data-lang="EN" data-name="English">🇬🇧 English</a></li>
+            <li><a class="dropdown-item lang-item" href="#" data-lang="HI" data-name="हिन्दी">🇮🇳 Hindi</a></li>
+            <li><a class="dropdown-item lang-item" href="#" data-lang="MR" data-name="मराठी">🇮🇳 Marathi</a></li>
+            <li><a class="dropdown-item lang-item" href="#" data-lang="GU" data-name="ગુજરાતી">🇮🇳 Gujarati</a></li>
+            <li><a class="dropdown-item lang-item" href="#" data-lang="FR" data-name="Français">🇫🇷 Français</a></li>
+            <li><a class="dropdown-item lang-item" href="#" data-lang="DE" data-name="Deutsch">🇩🇪 Deutsch</a></li>
+            <li><a class="dropdown-item lang-item" href="#" data-lang="AR" data-name="عربي">🇸🇦 Arabic</a></li>
+            <li><a class="dropdown-item lang-item" href="#" data-lang="ZH" data-name="中文">🇨🇳 Chinese</a></li>
+            <li><a class="dropdown-item lang-item" href="#" data-lang="ES" data-name="Español">🇪🇸 Spanish</a></li>
+            <li><a class="dropdown-item lang-item" href="#" data-lang="JA" data-name="日本語">🇯🇵 Japanese</a></li>
+          </ul> -->
+
+          <div class="translate-box">
+    <svg class="globe-icon" viewBox="0 0 24 24">
+        <path fill="currentColor"
+            d="M12 2A10 10 0 1 0 12 22A10 10 0 1 0 12 2zm6.93 9h-3.05a15.7 15.7 0 0 0-1.38-5.03A8.02 8.02 0 0 1 18.93 11zM12 4c1.24 1.53 2.12 4.08 2.36 7H9.64C9.88 8.08 10.76 5.53 12 4zm-2.5 1.97A15.7 15.7 0 0 0 8.12 11H5.07A8.02 8.02 0 0 1 9.5 5.97zM4.26 13h3.05a15.7 15.7 0 0 0 1.38 5.03A8.02 8.02 0 0 1 4.26 13zM12 20c-1.24-1.53-2.12-4.08-2.36-7h4.72C14.12 15.92 13.24 18.47 12 20zm2.5-1.97A15.7 15.7 0 0 0 15.88 13h3.05a8.02 8.02 0 0 1-4.43 5.03z"/>
+    </svg>
+
+    <select id="custom-language" >
+        <option value="">Language</option>
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+    </select>
+</div>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== MAIN NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container-fluid px-3 px-md-5 position-relative">
+    <a class="navbar-brand position-absolute" href="#">
+      <img src="./assets/images/logo.png" alt="Sainath Logo" id="navLogo" />
+    </a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item "><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="svcDrop" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Facility Management</a></li>
+            <li><a class="dropdown-item" href="#">Housekeeping</a></li>
+            <li><a class="dropdown-item" href="#">Green Cleaning</a></li>
+            <li><a class="dropdown-item" href="#">Pest Control</a></li>
+            <li><a class="dropdown-item" href="#">Landscaping</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Clients</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-primary-brand" href="#contact">Get a Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO SLIDER ===================== -->
+<section id="hero">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="hero-slide slide-1">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 slide_position" >
+            <div class="hero-content animate__animated animate__fadeInUp">
+              <span class="hero-tag">Trusted Since 2005</span>
+              <h1>Integrated Facility<br /><span>Management</span> Excellence</h1>
+              <p>Delivering world-class housekeeping, facility & maintenance services across India's top corporations.</p>
+              <div class="hero-btns">
+                <a href="#services" class="btn btn-hero-primary">Explore Services</a>
+                <a href="#contact" class="btn btn-hero-outline">Get Free Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide slide-2">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 slide_position">
+            <div class="hero-content animate__animated animate__fadeInUp">
+              <span class="hero-tag">Green Solutions</span>
+              <h1>Sustainability in<br /><span>Every Space</span> We Clean</h1>
+              <p>Eco-friendly cleaning products & zero-waste practices for a greener tomorrow.</p>
+              <div class="hero-btns">
+                <a href="#services" class="btn btn-hero-primary">Learn More</a>
+                <a href="#contact" class="btn btn-hero-outline">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="hero-slide slide-3">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 slide_position">
+            <div class="hero-content animate__animated animate__fadeInUp">
+              <span class="hero-tag">1000+ Projects</span>
+              <h1>Housekeeping<br /><span>Excellence</span> for Every Space</h1>
+              <p>From corporate offices to industrial plants – pristine spaces, every single day.</p>
+              <div class="hero-btns">
+                <a href="#services" class="btn btn-hero-primary">Our Services</a>
+                <a href="#testimonials" class="btn btn-hero-outline">Client Stories</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div class="hero-slide slide-4">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 slide_position">
+            <div class="hero-content animate__animated animate__fadeInUp">
+              <span class="hero-tag">Nationwide Network</span>
+              <h1>Empowering<br /><span>Businesses</span> Through Care</h1>
+              <p>Pan-India presence with over 500 trained professionals at your service.</p>
+              <div class="hero-btns">
+                <a href="#about" class="btn btn-hero-primary">About Us</a>
+                <a href="#contact" class="btn btn-hero-outline">Get in Touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 5 -->
+      <div class="carousel-item">
+        <div class="hero-slide slide-5">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 slide_position">
+            <div class="hero-content animate__animated animate__fadeInUp">
+              <span class="hero-tag">Together for Better Future</span>
+              <h1>Your Trusted<br /><span>Partner</span> in Facility Care</h1>
+              <p>ISO certified, award-winning services trusted by India's leading brands and institutions.</p>
+              <div class="hero-btns">
+                <a href="#brands" class="btn btn-hero-primary">Our Clients</a>
+                <a href="#contact" class="btn btn-hero-outline">Partner With Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+  <!-- Stats Bar -->
+  <div class="stats-bar">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="row g-0">
+        <div class="col-6 col-md-3 stat-item reveal-up">
+          <span class="stat-num" data-count="500">0</span><span class="stat-plus">+</span>
+          <p>Trained Professionals</p>
+        </div>
+        <div class="col-6 col-md-3 stat-item reveal-up" style="--delay:0.1s">
+          <span class="stat-num" data-count="1000">0</span><span class="stat-plus">+</span>
+          <p>Projects Completed</p>
+        </div>
+        <div class="col-6 col-md-3 stat-item reveal-up" style="--delay:0.2s">
+          <span class="stat-num" data-count="200">0</span><span class="stat-plus">+</span>
+          <p>Happy Clients</p>
+        </div>
+        <div class="col-6 col-md-3 stat-item reveal-up" style="--delay:0.3s">
+          <span class="stat-num" data-count="18">0</span><span class="stat-plus">+</span>
+          <p>Years of Excellence</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT SECTION ===================== -->
+<section id="about" class="section-pad">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="row align-items-center g-lg-5">
+      <div class="col-lg-6 reveal-left">
+        <div class="about-img-wrap">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80" alt="About Us" class="img-fluid rounded-3" />
+          </div>
+          <div class="about-img-badge">
+            <span class="badge-num">18+</span>
+            <span class="badge-txt">Years of<br/>Excellence</span>
+          </div>
+          <div class="about-img-float">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=300&q=80" alt="Team" class="img-fluid rounded-3" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal-right">
+        <div class="section-label">Who We Are</div>
+        <h2 class="section-heading">Sainath Sales &amp;<br/>Services Pvt. Ltd.</h2>
+        <div class="heading-line"></div>
+        <p class="lead-text">We strive by providing great customer services to our clients. Their feedback matters to us the most. We are passionate about delivering excellence solutions to ensure Integrated Facility Management services at the operations we respect and promote value in our service partners, team and associates, because we believe <em>"Together we build a better future."</em></p>
+        <ul class="about-list">
+          <li><i class="fas fa-check-circle"></i> ISO Certified Facility Management Company</li>
+          <li><i class="fas fa-check-circle"></i> Pan-India presence across 15+ states</li>
+          <li><i class="fas fa-check-circle"></i> 500+ trained and verified professionals</li>
+          <li><i class="fas fa-check-circle"></i> Eco-friendly & sustainable practices</li>
+          <li><i class="fas fa-check-circle"></i> 24/7 support & emergency response</li>
+        </ul>
+        <div class="about-btns d-flex flex-wrap gap-3 mt-4">
+          <a href="#services" class="btn btn-primary-brand">Our Services</a>
+          <a href="#" class="btn btn-outline-brand" id="downloadBrochure">
+            <!-- <i class="fab fa-twitter"></i> -->
+            <i class="fas fa-download me-2"></i>
+            Download Brochure</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DIRECTOR MESSAGE ===================== -->
+<section id="director" class="section-pad director-bg">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="text-center mb-5 reveal-up">
+      <div class="section-label">Leadership</div>
+      <h2 class="section-heading text-white">Director's Message</h2>
+      <div class="heading-line mx-auto"></div>
+    </div>
+    <div class="row align-items-center g-lg-5">
+      <div class="col-lg-4 text-center reveal-left">
+        <div class="director-card">
+          <img src="https://sainath.services/images/Manish-Mudgal.jpg?w=400&q=80" alt="Director" class="director-img" />
+          <h4 class="mt-3 text-white">Manish Mudgal</h4>
+          <span class="director-title">Managing Director</span>
+        </div>
+      </div>
+      <div class="col-lg-8 reveal-right">
+        <div class="director-msg-card">
+          <i class="fas fa-quote-left quote-icon"></i>
+          <p>At Sainath Sales and Services, our journey has been guided by one simple principle — people first. Every day, our dedicated team works tirelessly to deliver excellence in facility management, creating cleaner, safer, and more productive environments for our valued clients.</p>
+          <p>We believe that quality service is not just a deliverable — it is a promise. A promise to our clients, to our employees, and to the communities we serve. Our commitment to sustainability, innovation, and continuous improvement drives everything we do.</p>
+          <p class="mb-0"><strong>Together, we are building not just cleaner spaces — but a better future for all.</strong></p>
+          <div class="director-sign mt-3">— Manish Mudgal, Director</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .service-card-thumbnail{
+    width: 100%;
+    border-radius: 14px;
+    height: 16rem;
+  }
+    .service-card-thumbnail img{
+    border-radius: 14px;
+    width: 100%;
+    height: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+  .service-card-content{
+    padding: 1rem 1.5rem;
+  }
+  .service-card-content-heading{
+display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+</style>
+
+<!-- ===================== SERVICES ===================== -->
+<section id="services" class="section-pad">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="text-center mb-5 reveal-up">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-heading">Our Core Services</h2>
+      <div class="heading-line mx-auto"></div>
+      <p class="section-sub">Comprehensive facility solutions tailored to your business needs</p>
+    </div>
+    <div class="row g-lg-4">
+      <div class="col-sm-6 col-lg-4 reveal-up">
+        <div class="service-card">
+          <div class="service-card-thumbnail">
+            <img src="./assets/images/Integrated Facility Management.jpg" />
+          </div>
+          <div class="service-card-content" >
+            <div class="service-card-content-heading">
+            <div class="service-icon"><i class="fas fa-building"></i></div>
+            <h4>Integrated Facility Management</h4>
+            </div>
+            <p>End-to-end management of your facility infrastructure, ensuring seamless operations and cost efficiency.</p>
+            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 reveal-up" style="--delay:0.1s">
+        <div class="service-card">
+          <div class="service-card-thumbnail">
+            <img src="./assets/images/Housekeeping Excellence.jpg" />
+          </div>
+          <div class="service-card-content" >
+            <div class="service-card-content-heading">
+          <div class="service-icon"><i class="fas fa-broom"></i></div>
+          <h4>Housekeeping Excellence</h4>
+          </div>
+          <p>Professional housekeeping for offices, hospitals, factories, and commercial spaces with trained staff.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 reveal-up" style="--delay:0.2s">
+        <div class="service-card">
+          <div class="service-card-thumbnail">
+            <img src="./assets/images/Green Cleaning Solutions.jpg" />
+          </div>
+          <div class="service-card-content" >
+            <div class="service-card-content-heading">
+          <div class="service-icon"><i class="fas fa-leaf"></i></div>
+          <h4>Green Cleaning Solutions</h4>
+          </div>
+          <p>Eco-certified products and sustainable cleaning methods that protect people and the planet.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 reveal-up" style="--delay:0.1s">
+        <div class="service-card">
+          <div class="service-card-thumbnail">
+            <img src="./assets/images/Pest Control Services.jpg" />
+          </div>
+          <div class="service-card-content" >
+            <div class="service-card-content-heading">
+          <div class="service-icon"><i class="fas fa-bug"></i></div>
+          <h4>Pest Control Services</h4>
+          </div>
+          <p>Certified pest management programs for residential, commercial, and industrial premises.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 reveal-up" style="--delay:0.2s">
+        <div class="service-card">
+          <div class="service-card-thumbnail">
+            <img src="./assets/images/Horticulture.jpg" />
+          </div>
+          <div class="service-card-content" >
+            <div class="service-card-content-heading">
+          <div class="service-icon"><i class="fas fa-seedling"></i></div>
+          <h4>Landscaping &amp; Horticulture</h4>
+          </div>
+          <p>Transforming outdoor spaces with expert landscaping, garden maintenance, and plant care.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>  
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 reveal-up" style="--delay:0.3s">
+        <div class="service-card">
+          <div class="service-card-thumbnail">
+            <img src="./assets/images/Security.jpg" />
+          </div>
+          <div class="service-card-content" >
+            <div class="service-card-content-heading">
+          <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>Security &amp; Manpower</h4>
+          </div>
+          <p>Trained security personnel and manpower outsourcing solutions for diverse business requirements.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== WHY CHOOSE US ===================== -->
+<section id="why-us" class="section-pad why-bg">
+  <div class="container-fluid px-3 px-md-5">
+    
+
+        <!-- Top Content -->
+        <div class="row align-items-center mb-5">
+
+            <!-- Left Content -->
+            <div class="col-lg-7 mb-4 mb-lg-0 reveal-up">
+
+                <!-- <span class="section-tag">
+                    OUR ADVANTAGE
+                </span> -->
+                <div class="section-label light">Our Advantage</div>
+      
+      
+
+                <!-- <h2 class="section-title mt-4">
+                    Why Choose Sainath?
+                </h2> -->
+
+                <h2 class="section-heading text-white">Why Choose Sainath?</h2>
+
+                <p class="section-desc mt-4">
+                    Delivering unmatched quality, reliable support, and sustainable
+                    solutions that create lasting impact.
+                </p>
+
+                <!-- <div class="title-divider"></div> -->
+                <div class="heading-line "></div>
+
+            </div>
+
+            <!-- Right Image -->
+            <div class="col-lg-5">
+                <div class="hero-image-wrapper reveal-up">
+
+                    <div class="hero-image-shape">
+                        <img src="./assets/images/Housekeeping Excellence.jpg" alt="Cleaning Team">
+                    </div>
+
+                    <div class="trust-badge">
+                        <div class="badge-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div>
+                            <h6>Trusted by 500+</h6>
+                            <p>Clients across India</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+      
+
+   
+  
+    <!-- <div class="text-center mb-5 reveal-up">
+      <div class="section-label light">Our Advantage</div>
+      <h2 class="section-heading text-white">Why Choose Sainath?</h2>
+      <div class="heading-line mx-auto"></div>
+    </div> -->
+   
+               
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-4 col-lg-3 reveal-up">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-award"></i></div>
+          <h5>ISO Certified</h5>
+          <p>ISO 9001:2015 certified for quality management systems</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal-up" style="--delay:0.1s">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-users-cog"></i></div>
+          <h5>Expert Team</h5>
+          <p>500+ trained, background-verified professionals</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal-up" style="--delay:0.2s">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-clock"></i></div>
+          <h5>24/7 Support</h5>
+          <p>Round-the-clock customer support and emergency response</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal-up" style="--delay:0.3s">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-recycle"></i></div>
+          <h5>Eco-Friendly</h5>
+          <p>Sustainable, green-certified cleaning products and processes</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal-up" style="--delay:0.1s">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h5>Pan-India Presence</h5>
+          <p>Operations across 15+ states with local expertise</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal-up" style="--delay:0.2s">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-rupee-sign"></i></div>
+          <h5>Cost Effective</h5>
+          <p>Competitive pricing without compromising on quality</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal-up" style="--delay:0.3s">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h5>Digital Payments</h5>
+          <p>Cashless, contactless & digital billing convenience</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal-up" style="--delay:0.4s">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-handshake"></i></div>
+          <h5>Trusted Partner</h5>
+          <p>Long-term relationships with India's top corporates</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BRANDS / CLIENTS ===================== -->
+<section id="brands" class="section-pad brands-section">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="text-center mb-5 reveal-up">
+      <div class="section-label">Our Clients</div>
+      <h2 class="section-heading">Brands We've Worked With</h2>
+      <div class="heading-line mx-auto"></div>
+      <p class="section-sub">Trusted by India's most respected organizations</p>
+    </div> 
+    <div class="brands-track-wrap reveal-up">
+      <div class="brands-track">
+        <div class="brand-logo"><img src="https://sainath.services/images/IIT_Kanpur_Logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/Indian_Railway.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/department-of-education-rajasthan-logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/Delhi_Development_Authority_Logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/AIIMS%20Bathinda.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/RHTC%20Logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+                                                
+        <!-- Repeat for infinite scroll -->
+        <div class="brand-logo"><img src="https://sainath.services/images/IIT_Kanpur_Logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/Indian_Railway.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/department-of-education-rajasthan-logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/Delhi_Development_Authority_Logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/AIIMS%20Bathinda.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/RHTC%20Logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+      </div>
+    </div>
+
+    <div class="brands-track-wrap reveal-up">
+      <div class="brands-track">
+
+        <div class="brand-logo"><img src="https://sainath.services/images/delhi-govt.png?text=Indian+Oil" alt="Indian Oil"/></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/NSDC.png?text=Indian+Oil" alt="Indian Oil"/></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/DUSIB.png?text=Indian+Oil" alt="Indian Oil"/></div>                                        
+        <!-- Repeat for infinite scroll -->
+        <div class="brand-logo"><img src="https://sainath.services/images/delhi-govt.png?text=Indian+Oil" alt="Indian Oil"/></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/NSDC.png?text=Indian+Oil" alt="Indian Oil"/></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/DUSIB.png?text=Indian+Oil" alt="Indian Oil"/></div>    
+      </div>
+    </div>
+
+    <div class="brands-track-wrap reveal-up">
+      <div class="brands-track">
+        <div class="brand-logo"><img src="https://sainath.services/images/Delhi_Sports_University_Logo.png?text=Indian+Oil" alt="Indian Oil" /></div>                                
+        <div class="brand-logo"><img src="https://sainath.services/images/Central%20Vista%20Logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/Indian_Oil_Logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        
+        <div class="brand-logo"><img src="https://sainath.services/images/Jaipur_metro_logo.png?text=Indian+Oil" alt="Indian Oil" /></div>                                
+        <div class="brand-logo"><img src="https://sainath.services/images/NHAI%20logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/dele_logo.jpg?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/Seal_of_the_Delhi_Legislative_Assembly.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/Government_of_India_logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="./assets/images/brand_nagarnigamrohtak.png" alt="Indian Oil" /></div>
+        <!-- Repeat for infinite scroll -->
+        <div class="brand-logo"><img src="https://sainath.services/images/Delhi_Sports_University_Logo.png?text=Indian+Oil" alt="Indian Oil" /></div>                                
+        <div class="brand-logo"><img src="https://sainath.services/images/Central%20Vista%20Logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/Indian_Oil_Logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+
+        <div class="brand-logo"><img src="https://sainath.services/images/Jaipur_metro_logo.png?text=Indian+Oil" alt="Indian Oil" /></div>                                
+        <div class="brand-logo"><img src="https://sainath.services/images/NHAI%20logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/dele_logo.jpg?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/Seal_of_the_Delhi_Legislative_Assembly.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="https://sainath.services/images/Government_of_India_logo.png?text=Indian+Oil" alt="Indian Oil" /></div>
+        <div class="brand-logo"><img src="./assets/images/brand_nagarnigamrohtak.png" alt="Indian Oil" /></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OUR TEAM ===================== -->
+<section id="team" class="section-pad">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="text-center mb-5 reveal-up">
+      <div class="section-label">The People</div>
+      <h2 class="section-heading">Our Humble Team</h2>
+      <div class="heading-line mx-auto"></div>
+      <p class="section-sub">Meet the leaders driving excellence at Sainath</p>
+    </div>
+    <div class="row g-lg-4 justify-content-center">
+      <div class="col-sm-6 col-lg-3 reveal-up">
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="https://sainath.services/images/Manish-Mudgal.jpg?w=400&q=80" alt="Director" />
+            <div class="team-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h5>Santosh Salvi</h5>
+            <span>Managing Director</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal-up" style="--delay:0.1s">
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="./assets/images/teams1.png" alt="Operations Head" />
+            <div class="team-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h5>Mahesh Patil</h5>
+            <span>Operations Head</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal-up" style="--delay:0.2s">
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="https://sainath.services/images/Pradeep-Vashisth.jpg?w=400&q=80" alt="Legal Advisor" />
+            <div class="team-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h5>Pradeep Tripathi</h5>
+            <span>Legal Advisor &amp; Consultant</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal-up" style="--delay:0.3s">
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="https://sainath.services/images/Ajay-Vashisth.jpg?w=400&q=80" alt="HR Manager" />
+            <div class="team-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h5>Jay Tripathi</h5>
+            <span>Legal Advisor &amp; Consultant</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section id="testimonials" class="section-pad testi-bg">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="text-center mb-5 reveal-up">
+      <div class="section-label light">Client Feedback</div>
+      <h2 class="section-heading text-white">What Our Clients Say</h2>
+      <div class="heading-line mx-auto"></div>
+    </div>
+    <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 reveal-up">
+              <div class="testi-card">
+                <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Sainath has been our facility management partner for 5 years. Their professionalism, reliability, and dedication to quality is unmatched. Highly recommended!"</p>
+                <div class="testi-author">
+                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&q=80" alt="Prashant Kaushik" />
+                  <div>
+                    <h6>Prashant Kaushik</h6>
+                    <span>GM Operations, IndianOil</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal-up" style="--delay:0.1s">
+              <div class="testi-card">
+                <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Exceptional service quality and very responsive team. They understand our needs perfectly and deliver consistently. Truly a trustworthy partner!"</p>
+                <div class="testi-author">
+                  <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80" alt="Nivedita Banerjee" />
+                  <div>
+                    <h6>Nivedita Banerjee</h6>
+                    <span>Facility Manager, BHEL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal-up" style="--delay:0.2s">
+              <div class="testi-card">
+                <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <p>"Their eco-friendly approach and trained staff make them stand apart. The green cleaning initiative they implemented has significantly improved our workspace quality."</p>
+                <div class="testi-author">
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Vivek Sharma" />
+                  <div>
+                    <h6>Vivek Sharma</h6>
+                    <span>Director, ONGC Projects</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+              <div class="testi-card">
+                <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Outstanding service! Their 24/7 support ensures our facilities are always in top condition. The team is professional, punctual, and thorough in their work."</p>
+                <div class="testi-author">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sunita Verma" />
+                  <div>
+                    <h6>Sunita Verma</h6>
+                    <span>HR Head, Railway Zones</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="testi-card">
+                <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"We've been working with Sainath for 3 years and the quality of service has never wavered. They are dependable, skilled, and genuinely care about client satisfaction."</p>
+                <div class="testi-author">
+                  <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=100&q=80" alt="Arun Mehta" />
+                  <div>
+                    <h6>Arun Mehta</h6>
+                    <span>Plant Manager, NTPC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="testi-card">
+                <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Outstanding service! Their 24/7 support ensures our facilities are always in top condition. The team is professional, punctual, and thorough in their work."</p>
+                <div class="testi-author">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sunita Verma" />
+                  <div>
+                    <h6>Sunita Verma</h6>
+                    <span>HR Head, Railway Zones</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators testi-indicators">
+        <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="1"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA BANNER ===================== -->
+<section id="cta-band" class="cta-band reveal-up">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="row align-items-center g-lg-4">
+      <div class="col-lg-7">
+        <h3>Ready to Transform Your Facility?</h3>
+        <p>Get a free consultation and customized quote from our experts within 24 hours.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end d-flex flex-wrap gap-3 justify-content-lg-end">
+        <a href="tel:+911234567890" class="btn btn-cta-white"><i class="fas fa-phone me-2"></i>Call Now</a>
+        <a href="#contact" class="btn btn-cta-outline">Get Free Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="section-pad">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="text-center mb-5 reveal-up">
+      <div class="section-label">Reach Us</div>
+      <h2 class="section-heading">Get In Touch</h2>
+      <div class="heading-line mx-auto"></div>
+    </div>
+    <div class="row g-lg-5">
+      <div class="col-lg-5 reveal-left">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h6>Our Address</h6>
+              <p>123 Business Park, Andheri East, Mumbai – 400069, Maharashtra, India</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h6>Phone Number</h6>
+              <p>+91 12345 67890<br/>+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h6>Email Address</h6>
+              <p>info@sainathservices.com<br/>support@sainathservices.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h6>Working Hours</h6>
+              <p>Mon–Sat: 9:00 AM – 7:00 PM<br/>Emergency: 24/7 Available</p>
+            </div>
+          </div>
+          <div class="contact-social mt-4">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal-right">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="row g-lg-3">
+            <div class="col-md-6">
+              <label class="form-label">Full Name *</label>
+              <input type="text" class="form-control" placeholder="Your Full Name" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Company Name</label>
+              <input type="text" class="form-control" placeholder="Company / Organization" />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email Address *</label>
+              <input type="email" class="form-control" placeholder="your@email.com" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">City</label>
+              <input type="text" class="form-control" placeholder="Your City" />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Service Required</label>
+              <select class="form-select">
+                <option value="">Select Service</option>
+                <option>Integrated Facility Management</option>
+                <option>Housekeeping</option>
+                <option>Green Cleaning</option>
+                <option>Pest Control</option>
+                <option>Landscaping</option>
+                <option>Security & Manpower</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Your Message *</label>
+              <textarea class="form-control" rows="4" placeholder="Tell us about your requirements..." required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary-brand w-100">
+                <i class="fas fa-paper-plane me-2"></i>Send Enquiry
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MAP ===================== -->
+<div id="map-section">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823357!2d72.74109995709657!3d19.08219783958221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <div class="footer-logo-img mb-3">
+              <img src="./assets/images/logo.png" alt="Logo" class="footer-logo" />
+            </div>
+            
+            <p>Sainath Sales and Services Pvt. Ltd. delivers world-class integrated facility management services across India. Together for a better future.</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#brands">Clients</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6">
+          <h5 class="footer-heading">Our Services</h5>
+          <ul class="footer-links">
+            <li><a href="#services">Facility Management</a></li>
+            <li><a href="#services">Housekeeping</a></li>
+            <li><a href="#services">Green Cleaning</a></li>
+            <li><a href="#services">Pest Control</a></li>
+            <li><a href="#services">Landscaping</a></li>
+            <li><a href="#services">Security Services</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Contact Info</h5>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i>123 Business Park, Andheri East, Mumbai – 400069</li>
+            <li><i class="fas fa-phone-alt"></i><a href="tel:+911234567890">+91 12345 67890</a></li>
+            <li><i class="fas fa-envelope"></i><a href="mailto:info@sainathservices.com">info@sainathservices.com</a></li>
+          </ul>
+          <div class="footer-cert mt-3">
+            <span class="cert-badge"><i class="fas fa-certificate"></i> ISO 9001:2015</span>
+            <span class="cert-badge"><i class="fas fa-shield-alt"></i> Verified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p class="mb-0">© 2024 Sainath Sales and Services Pvt. Ltd. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== FLOATING ELEMENTS ===================== -->
+
+<!-- Fixed Enquiry Sidebar -->
+<div id="enquirySidebar" class="enquiry-sidebar">
+  <div class="enquiry-tab" id="enquiryTab">
+    <i class="fas fa-comment-dots"></i>
+    <span>Quick Enquiry</span>
+  </div>
+  <div class="enquiry-form-panel" id="enquiryPanel">
+    <div class="eq-header">
+      <h6><i class="fas fa-headset me-2"></i>Quick Enquiry</h6>
+      <button class="eq-close" id="closeEnquiry"><i class="fas fa-times"></i></button>
+    </div>
+    <form id="quickEnquiryForm">
+      <input type="text" class="form-control mb-2" placeholder="Your Name" required />
+      <input type="tel" class="form-control mb-2" placeholder="Phone Number" required />
+      <input type="email" class="form-control mb-2" placeholder="Email Address" />
+      <select class="form-select mb-2">
+        <option value="">Select Service</option>
+        <option>Facility Management</option>
+        <option>Housekeeping</option>
+        <option>Green Cleaning</option>
+        <option>Pest Control</option>
+        <option>Other</option>
+      </select>
+      <textarea class="form-control mb-3" rows="3" placeholder="Your Message..."></textarea>
+      <button type="submit" class="btn btn-primary-brand w-100">Submit Enquiry</button>
+    </form>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<button id="goToTop" class="go-top-btn" title="Go to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/911234567890" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Download Brochure Float -->
+<a href="#" class="brochure-float" id="brochureFloat" title="Download Brochure">
+
+<i class="fas fa-book"></i>          
+
+</a>
+
+<!-- Success Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="successToast" class="toast" role="alert">
+    <div class="toast-header">
+      <i class="fas fa-check-circle text-success me-2"></i>
+      <strong class="me-auto">Success!</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">Your enquiry has been submitted successfully!</div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("custom-language")
+        .addEventListener("change", function () {
+            changeLanguage(this.value);
+        });
+});
+
+function changeLanguage(lang) {
+    let interval = setInterval(() => {
+        let select = document.querySelector('.goog-te-combo');
+
+        if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event('change'));
+            clearInterval(interval);
+        }
+    }, 500);
+}
+</script>
+</body>
+</html>
