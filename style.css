@@ -410,17 +410,18 @@ li.nav-item.dropdown:hover:after{
 .carousel-control-prev-icon, .carousel-control-next-icon { display: none; }
 
 .carousel-indicators button {
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.4);
-  border: none;
-  margin: 0 4px;
-  transition: var(--transition);
+  width: 10px!important; 
+  height: 10px!important;
+  border-radius: 50%!important;
+  background: rgba(255,255,255,0.4)!important;
+  border: none!important;
+  margin: 0 4px!important;
+  transition: var(--transition)!important;
 }
 .carousel-indicators button.active {
-  background: var(--green);
-  width: 28px;
-  border-radius: 6px;
+  background: var(--green)!important;
+  width: 28px!important;
+  border-radius: 6px!important;
 }
 
 /* ---- STATS BAR ---- */
@@ -898,13 +899,13 @@ li.nav-item.dropdown:hover:after{
   margin-top: 30px;
 }
 .testi-indicators button {
-  background: rgba(255,255,255,0.35) !important;
+  /* background: rgba(255,255,255,0.35) !important; */
   width: 10px !important;
   height: 10px !important;
 }
 .testi-indicators button.active {
-  background: var(--green) !important;
-  width: 28px !important;
+  /* background: var(--green) !important; */
+  /* width: 28px !important; */
 }
 
 /* ---- CTA BAND ---- */
