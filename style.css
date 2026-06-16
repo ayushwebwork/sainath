@@ -1313,8 +1313,8 @@ body {
     border-radius: 0.5rem;
   }
 #mainNav.scrolled .navbar-brand.position-absolute{
-    width: 9rem;
-    height: 5rem;
+    width: 7rem;
+    height: 4rem;
 }
 .brands-track .brand-logo img{
   width: 100%;
@@ -1477,8 +1477,8 @@ body {
     left: 1rem;
     bottom: 0;
     right: 0;
-    width: 7rem;
-    height: 4rem;
+    width: 9rem;
+    height: 5rem;
     z-index: 99999999999999999;
     /* border: 5px solid red; */
     box-shadow: unset;
