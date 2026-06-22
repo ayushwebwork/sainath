@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./assets/css/header-footer.css" />
+  <link rel="stylesheet" href="./assets/css/about.css"/>
+</head>
+<body>
+
+
+
+
+
+    <div id="top-header">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <div class="top-contacts d-flex flex-wrap gap-3">
+        <a href="tel:+919716222324"><i class="fas fa-phone-alt me-1"></i>+91 9716222324</a>
+        <a href="mailto:info@sainathservices.com"><i class="fas fa-envelope me-1"></i>info@sainath.services</a>
+        <span><i class="fas fa-map-marker-alt me-1"></i>B-1 Surya Nagar, Ghaziabad, Uttar Pradesh 201011</span>
+      </div>
+      <div class="top-right d-flex align-items-center gap-3">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <!-- Language Toggler -->
+        <div class="lang-wrapper dropdown">
+          
+
+          <div class="translate-box">
+    <svg class="globe-icon" viewBox="0 0 24 24">
+        <path fill="currentColor"
+            d="M12 2A10 10 0 1 0 12 22A10 10 0 1 0 12 2zm6.93 9h-3.05a15.7 15.7 0 0 0-1.38-5.03A8.02 8.02 0 0 1 18.93 11zM12 4c1.24 1.53 2.12 4.08 2.36 7H9.64C9.88 8.08 10.76 5.53 12 4zm-2.5 1.97A15.7 15.7 0 0 0 8.12 11H5.07A8.02 8.02 0 0 1 9.5 5.97zM4.26 13h3.05a15.7 15.7 0 0 0 1.38 5.03A8.02 8.02 0 0 1 4.26 13zM12 20c-1.24-1.53-2.12-4.08-2.36-7h4.72C14.12 15.92 13.24 18.47 12 20zm2.5-1.97A15.7 15.7 0 0 0 15.88 13h3.05a8.02 8.02 0 0 1-4.43 5.03z"/>
+    </svg>
+
+    <select id="custom-language" >
+        <option value="">Language</option>
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+    </select>
+</div>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== MAIN NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container-fluid px-3 px-md-5 position-relative">
+    <a class="navbar-brand position-absolute" href="./index.html">
+      <img src="./assets/images/logo.png" alt="Sainath Logo" id="navLogo" />
+    </a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item "><a class="nav-link " href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="./about.html">About</a></li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="svcDrop" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Facility Management</a></li>
+            <li><a class="dropdown-item" href="#">Housekeeping</a></li>
+            <li><a class="dropdown-item" href="#">Green Cleaning</a></li>
+            <li><a class="dropdown-item" href="#">Pest Control</a></li>
+            <li><a class="dropdown-item" href="#">Landscaping</a></li>
+          </ul>
+        </li> -->
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li> -->
+        <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-primary-brand" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════ PAGE HEADER ═══════════════════════════════ -->
+<header class="page-header">
+  <div class="container">
+    <div class="row align-items-end g-4">
+      <div class="col-lg-7">
+        <nav aria-label="breadcrumb" class="page-breadcrumb fade-up">
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house-fill me-1"></i>Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+          </ol>
+        </nav>
+        <h1 class="page-header-title fade-up delay-1">About <span>Sainath</span><br>Sales &amp; Services</h1>
+        <p class="page-header-sub fade-up delay-2">Delivering unmatched quality, reliable support, and sustainable solutions that create lasting impact — across India, since 2012.</p>
+      </div>
+      <div class="col-lg-5 fade-right">
+        <!-- <div class="page-header-right-img-wrap">
+          <img src="./assets/images/logo.png"/>
+        </div> -->
+        <div class="page-header-badge-row mt-3">
+          <div class="ph-badge"><i class="bi bi-patch-check-fill"></i><span>ISO Certified</span></div>
+          <div class="ph-badge"><i class="bi bi-award-fill"></i><span>NSDC Partner</span></div>
+          <div class="ph-badge"><i class="bi bi-geo-alt-fill"></i><span>8+ States</span></div>
+          <div class="ph-badge"><i class="bi bi-people-fill"></i><span>5000+ Professionals</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-header-wave">
+    <svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,28 C480,56 960,0 1440,28 L1440,56 L0,56 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<!-- <section class="about-hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="eyebrow fade-up">About Us</span>
+        <h1 class="fade-up delay-1">Who We Are &amp;<br><span>Our Story</span></h1>
+        <p class="lead fade-up delay-2">
+          Our journey began in 2012 with a mission of maintaining cleanliness across India. Today, Sainath Sales &amp; Services is one of the best quality-service providers—operating across 8+ states with an unwavering focus on PAN-India business opportunities.
+        </p>
+        <div class="hero-stat-bar fade-up delay-3">
+          <div class="hero-stat"><span class="num">8+</span><span class="lbl">States</span></div>
+          <div class="hero-stat"><span class="num">5000+</span><span class="lbl">Professionals</span></div>
+          <div class="hero-stat"><span class="num">100+</span><span class="lbl">Clients</span></div>
+          <div class="hero-stat"><span class="num">14+</span><span class="lbl">Years of Excellence</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-img-wrap fade-right">
+          <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=800&q=80" alt="Sainath Team" />
+          <span class="hero-badge"><i class="bi bi-patch-check-fill me-1"></i> NSDC Certified Organization</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ═══════════════════════════════ WHO WE ARE ═══════════════════════════════ -->
+<section class="who-section">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 who-text">
+        <span class="section-eyebrow fade-up">Our Identity</span>
+        <h2 class="section-title fade-up delay-1">Who <span>We Are</span></h2>
+        <div class="section-divider fade-up delay-1"></div>
+        <p class="fade-up delay-2">
+          Our journey began in 2012 with a mission of maintaining cleanliness across India. Initially the company served only hotel clients. Sainath is one of the best quality-service providers in the sector. The company has grown from 5 employees in Nagpur (Dhantoli Prashant) to over 5,000 professionals today, acquiring the best talent in Delhi (NCR), Maharashtra, Rajasthan, Assam, and UP.
+        </p>
+        <p class="fade-up delay-3">
+          The company has now graduated into the Facility Management and Sanitation &amp; Hygiene space. Our commitment, dedication, and passion to serve our customers have led us to grow ever further—and we look forward to growing our ever-lasting relationship with them through diligent due diligence.
+        </p>
+        <div class="row g-3 mt-2 fade-up delay-4">
+          <div class="col-6">
+            <div class="reach-badge">
+              <div class="big">8+</div>
+              <div class="sub">States of Operation</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="reach-badge">
+              <div class="big">PAN</div>
+              <div class="sub" style="font-size:.9rem; color:var(--green);">India Presence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-sm-6 fade-up delay-1">
+            <div class="who-card housekeeping position-relative">
+              <div class="icon-wrap"><i class="bi bi-house-gear-fill"></i></div>
+              <h5>Housekeeping Services</h5>
+              <p>Professional cleaning and housekeeping solutions for corporate offices, hospitals, hotels, and public spaces ensuring hygiene standards.</p>
+              <div class="who-card-overlay"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 fade-up delay-2">
+            <div class="who-card Facility position-relative">
+              <div class="icon-wrap"><i class="bi bi-building-gear"></i></div>
+              <h5>Facility Management</h5>
+              <p>Integrated facility management services delivering comprehensive operational support for commercial and institutional properties.</p>
+              <div class="who-card-overlay"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 fade-up delay-3">
+            <div class="who-card Sanitation position-relative">
+              <div class="icon-wrap"><i class="bi bi-shield-check"></i></div>
+              <h5>Garbage Collection</h5>
+              <p>Reliable door-to-door waste collection services ensuring timely disposal, cleaner neighborhoods, and environmentally responsible waste management practices every day</p>
+              <div class="who-card-overlay"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 fade-up delay-4">
+            <div class="who-card Manpower position-relative">
+              <div class="icon-wrap"><i class="bi bi-people-fill"></i></div>
+              <h5>Security & Manpower</h5>
+              <p>Professional security and skilled manpower solutions delivering safety, discipline, and dependable workforce support for residential, commercial, and industrial facilities</p>
+              <div class="who-card-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ MISSION ═══════════════════════════════ -->
+<section class="mission-section">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-7">
+        <span class="section-eyebrow fade-up">Our Purpose</span>
+        <h2 class="section-title fade-up delay-1">Our <span>Mission</span></h2>
+        <div class="section-divider fade-up delay-1"></div>
+        <div class="mt-4">
+          <div class="mission-point fade-up delay-1">
+            <div class="mp-icon"><i class="bi bi-star-fill"></i></div>
+            <div>
+              <h6>Customer Delight</h6>
+              <p>At Sainath Sales &amp; Services, we believe in doing the things that become important for us. Our focus is on being available on-call and on-person for our clients—even while on leave. Customer satisfaction has become important for us.</p>
+            </div>
+          </div>
+          <div class="mission-point fade-up delay-2">
+            <div class="mp-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <div>
+              <h6>Value-Driven Growth</h6>
+              <p>Regular on-site presence at client locations has become important for us. We believe that offering them good value for our services—providing quality and transparency—is how we grow sustainably.</p>
+            </div>
+          </div>
+          <div class="mission-point fade-up delay-3">
+            <div class="mp-icon"><i class="bi bi-globe-asia-australia"></i></div>
+            <div>
+              <h6>Sustainable Impact</h6>
+              <p>We are passionate about delivering excellent, reliable services in every particular way—by delivering great results for our clients, team, and our communities across India.</p>
+            </div>
+          </div>
+          <div class="mission-point fade-up delay-4">
+            <div class="mp-icon"><i class="bi bi-heart-fill"></i></div>
+            <div>
+              <h6>People &amp; Planet</h6>
+              <p>We passionately care for our vendor partners, team, and associates because we believe that together we build a better future and serve all stakeholders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 text-center fade-up delay-2">
+        <div class="mission-circle">
+          <!-- <div class="mission-circle-inner">
+            <span class="mi-title">OUR<br>MISSION</span>
+            <span class="mi-sub">Together for<br>Better Future</span>
+          </div> -->
+        </div>
+        <div class="row g-3 mt-4">
+          <div class="col-6">
+            <div class="pan-stat">
+              <div class="n">ISO</div>
+              <div class="l">Certified</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="pan-stat">
+              <div class="n">24/7</div>
+              <div class="l">Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ DIRECTOR'S MESSAGE ═══════════════════════════════ -->
+<section class="director-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-7 text-center">
+        <span class="section-eyebrow fade-up">Leadership</span>
+        <h2 class="section-title fade-up delay-1">Director's <span>Message</span></h2>
+        <div class="section-divider mx-auto fade-up delay-1"></div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-9 fade-up delay-2">
+        <div class="director-card">
+          <blockquote>
+            We thrive by providing great customer services to our clients; their feedback motivates us the most. We are passionate about delivering a billion services to our clients through our integrated facility management services. At the same time, we respect and provide value to our vendor partners, team, and associates—because we believe that together we build a better future. Together we are able to grow.
+          </blockquote>
+          <div class="director-profile">
+            <!-- <div class="director-avatar">MH</div> -->
+            <div class="director_message_avatar">
+              <img src="./assets/images/Manish-Mudgal.jpg" />
+              </div>  
+            <div>
+              <div class="director-name">Manish Mudgal</div>
+              <div class="director-title">Director, Sainath Sales &amp; Services Pvt. Ltd.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ TEAM ═══════════════════════════════ -->
+<section class="team-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-6 text-center">
+        <span class="section-eyebrow fade-up">The People</span>
+        <h2 class="section-title fade-up delay-1">Our Humble <span>Team</span></h2>
+        <div class="section-divider mx-auto fade-up delay-1"></div>
+        <p class="text-muted fade-up delay-2" style="font-size:.9rem;">Experienced professionals dedicated to excellence in every service they deliver.</p>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <!-- Team cards with avatar initials -->
+      <div class="col-6 col-md-3 fade-up delay-1">
+        <div class="team-card">
+          <div class="team-card-img">
+            <!-- <span>MH</span> -->
+            <img src="./assets/images/Manish-Mudgal.jpg"/>
+          </div>
+          <div class="team-card-body">
+            <h6>Manish Mudgal</h6>
+            <span>Director</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-up delay-2">
+        <div class="team-card">
+          <div class="team-card-img">
+            <img src="./assets/images/teams1.png"/>
+          </div>
+          <div class="team-card-body">
+            <h6>Sarthak Vashisth</h6>
+            <span>Co-Founder</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-up delay-3">
+        <div class="team-card">
+          <div class="team-card-img">
+            <img src="./assets/images/Pradeep-Vashisth.jpg"/>
+          </div>
+          <div class="team-card-body">
+            <h6>Pradeep Vashisth</h6>
+            <span>Legal Director </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-up delay-4">
+        <div class="team-card">
+          <div class="team-card-img">
+            <img src="./assets/images/Ajay-Vashisth.jpg"/>
+          </div>
+          <div class="team-card-body">
+            <h6>Ajay Vashisth</h6>
+            <span>Sales Head</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ PAN INDIA ═══════════════════════════════ -->
+<section class="pan-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-7 text-center">
+        <span class="section-eyebrow fade-up">Our Footprint</span>
+        <h2 class="section-title fade-up delay-1">Going <span>PAN India</span></h2>
+        <div class="section-divider mx-auto fade-up delay-1" style="background:#fff; opacity:.3;"></div>
+        <p class="fade-up delay-2" style="color:rgba(255,255,255,.7); font-size:.9rem;">Over the years, Sainath has outgrown state boundaries and extended its solutions to 8+ states of India, with an increasing presence in different parts of the country.</p>
+      </div>
+    </div>
+    <div class="row g-4 mb-5">
+      <div class="col-6 col-md-3 fade-up delay-1"><div class="pan-stat"><div class="n">8+</div><div class="l">States</div></div></div>
+      <div class="col-6 col-md-3 fade-up delay-2"><div class="pan-stat"><div class="n">5000+</div><div class="l">Professionals</div></div></div>
+      <div class="col-6 col-md-3 fade-up delay-3"><div class="pan-stat"><div class="n">100+</div><div class="l">Happy Clients</div></div></div>
+      <div class="col-6 col-md-3 fade-up delay-4"><div class="pan-stat"><div class="n">14+</div><div class="l">Years</div></div></div>
+    </div>
+    <div class="text-center fade-up delay-2 mb-5">
+      <h5 class="mb-4" style="color:rgba(255,255,255,.8); font-size:.95rem; text-transform:uppercase; letter-spacing:2px;">Places We Belong</h5>
+      <div>
+        <span class="state-pill"><i class="bi bi-geo-alt-fill"></i> New Delhi</span>
+        <span class="state-pill"><i class="bi bi-geo-alt-fill"></i> Maharashtra</span>
+        <span class="state-pill"><i class="bi bi-geo-alt-fill"></i> Uttarakhand</span>
+        <span class="state-pill"><i class="bi bi-geo-alt-fill"></i> Uttar Pradesh</span>
+        <span class="state-pill"><i class="bi bi-geo-alt-fill"></i> Assam</span>
+        <span class="state-pill"><i class="bi bi-geo-alt-fill"></i> Rajasthan</span>
+        <span class="state-pill"><i class="bi bi-geo-alt-fill"></i> Andhra Pradesh</span>
+        <span class="state-pill"><i class="bi bi-geo-alt-fill"></i> Himachal Pradesh</span>
+        <span class="state-pill"><i class="bi bi-geo-alt-fill"></i> Tamil Nadu</span>
+        <span class="state-pill"><i class="bi bi-geo-alt-fill"></i> Greater Noida</span>
+        <span class="state-pill"><i class="bi bi-geo-alt-fill"></i> Haryana</span>
+      </div>
+    </div>
+    <div class="row g-4 mb-5">
+      <div class="col-12 col-md-12 fade-up delay-1">
+        <div class="footprint_img">
+          <!-- <div class="n">8+</div><div class="l">States</div> -->
+          <div class="footprint_img_wrap">
+            <img src="./assets/images/Ourreach.png" />
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ AWARDS ═══════════════════════════════ -->
+<section class="awards-section">
+  <div class="container" style="position:relative; z-index:1;">
+
+    <!-- Section header -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-7 text-center">
+        <span class="section-eyebrow fade-up">Our Pride</span>
+        <h2 class="section-title fade-up delay-1">Awards &amp; <span>Achievements</span></h2>
+        <div class="section-divider mx-auto fade-up delay-1" style="background:var(--green);"></div>
+        <p class="fade-up delay-2" style="color:rgba(255,255,255,.65); font-size:.92rem; line-height:1.8;">We are among the very few that have been recognized and awarded for our outstanding work in facility management and cleanliness across India — and every recognition makes us more humble and more driven.</p>
+      </div>
+    </div>
+
+    <!-- Featured Award -->
+    <div class="row mb-4 fade-up delay-1">
+      <div class="col-12">
+        <div class="award-featured">
+          <div class="award-featured-icon"><i class="bi bi-trophy-fill"></i></div>
+          <div>
+            <span class="award-featured-tag">★ Flagship Recognition</span>
+            <h4>Clean Nation Mission Award — Government of India</h4>
+            <p>Sainath Sales &amp; Services was recognized by the Government of India for outstanding contribution to the Swachh Bharat (Clean India) Mission. We were personally represented at the national felicitation ceremony in New Delhi, honoring our dedication to maintaining public and institutional cleanliness standards across multiple states.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Award Grid (6 cards) -->
+    <div class="row g-3 mb-5">
+      <div class="col-sm-6 col-lg-4 fade-up delay-1">
+        <div class="award-grid-card">
+          <div class="agc-icon"><i class="bi bi-award-fill"></i></div>
+          <h6>NSDC Certification</h6>
+          <p>Certified by the National Skill Development Corporation for our structured skill training programs for housekeeping and facility workers.</p>
+          <span class="agc-year">Since 2018</span>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up delay-2">
+        <div class="award-grid-card">
+          <div class="agc-icon"><i class="bi bi-patch-check-fill"></i></div>
+          <h6>ISO 9001:2015 Certified</h6>
+          <p>ISO-certified quality management system ensuring process consistency, continuous improvement, and superior service delivery standards.</p>
+          <span class="agc-year">Recertified 2023</span>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up delay-3">
+        <div class="award-grid-card">
+          <div class="agc-icon"><i class="bi bi-star-fill"></i></div>
+          <h6>Client Excellence Award</h6>
+          <p>Multiple client-awarded recognitions from leading institutions for sustained service quality, reliability, and customer delight across sectors.</p>
+          <span class="agc-year">Annual Recognition</span>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up delay-1">
+        <div class="award-grid-card">
+          <div class="agc-icon"><i class="bi bi-building-fill-check"></i></div>
+          <h6>Best Facility Partner</h6>
+          <p>Awarded by Indian Railways and Metro Rail authorities for uninterrupted and hygienic facility management at major rail stations and depots.</p>
+          <span class="agc-year">2021 &amp; 2022</span>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up delay-2">
+        <div class="award-grid-card">
+          <div class="agc-icon"><i class="bi bi-shield-fill-check"></i></div>
+          <h6>Swachh Survekshan Partner</h6>
+          <p>Recognized as a verified implementation partner for Swachh Survekshan campaigns across Delhi NCR and other urban local bodies.</p>
+          <span class="agc-year">2020 – Present</span>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up delay-3">
+        <div class="award-grid-card">
+          <div class="agc-icon"><i class="bi bi-people-fill"></i></div>
+          <h6>Best Employer Recognition</h6>
+          <p>Acknowledged for providing structured employment, fair wages, and skill development to over 5,000 professionals from underprivileged communities.</p>
+          <span class="agc-year">2023</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Milestone Timeline -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10">
+        <h5 class="text-center fade-up mb-5" style="color:rgba(255,255,255,.8); text-transform:uppercase; letter-spacing:2px; font-size:.85rem;">Our Journey of Recognition</h5>
+        <div class="award-timeline">
+          <div class="atl-item fade-up delay-1">
+            <div class="atl-dot"></div>
+            <div class="atl-year">2012</div>
+            <div class="atl-content">
+              <h6>Founded in Nagpur</h6>
+              <p>Started with 5 employees and a single hotel client, laying the foundation for a pan-India housekeeping services company.</p>
+            </div>
+          </div>
+          <div class="atl-item fade-up delay-2">
+            <div class="atl-dot"></div>
+            <div class="atl-year">2016</div>
+            <div class="atl-content">
+              <h6>Expanded to Delhi NCR</h6>
+              <p>Secured first major institutional contract in Delhi; expanded team to 500+ employees across 3 states.</p>
+            </div>
+          </div>
+          <div class="atl-item fade-up delay-1">
+            <div class="atl-dot"></div>
+            <div class="atl-year">2018</div>
+            <div class="atl-content">
+              <h6>NSDC Certification Achieved</h6>
+              <p>Officially recognized by the National Skill Development Corporation — a milestone in our workforce training journey.</p>
+            </div>
+          </div>
+          <div class="atl-item fade-up delay-2">
+            <div class="atl-dot"></div>
+            <div class="atl-year">2020</div>
+            <div class="atl-content">
+              <h6>Clean India Mission Partner</h6>
+              <p>Became a Swachh Bharat Mission implementation partner, serving civic bodies and government institutions.</p>
+            </div>
+          </div>
+          <div class="atl-item fade-up delay-1">
+            <div class="atl-dot"></div>
+            <div class="atl-year">2022</div>
+            <div class="atl-content">
+              <h6>ISO 9001:2015 Recertified &amp; PAN India</h6>
+              <p>Achieved ISO recertification and extended operations to 8+ states with 5,000+ professionals on the ground.</p>
+            </div>
+          </div>
+          <div class="atl-item fade-up delay-2">
+            <div class="atl-dot"></div>
+            <div class="atl-year">2024</div>
+            <div class="atl-content">
+              <h6>National Felicitation — New Delhi</h6>
+              <p>Represented at a national ceremony in New Delhi honoring contributions to Clean India and sanitation excellence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recognition Stats Counter Strip -->
+    <div class="award-counter-strip fade-up delay-2">
+      <div class="awd-stat"><div class="an" data-count="12">12</div><div class="al">National Awards</div></div>
+      <div class="awd-stat"><div class="an" data-count="5">5</div><div class="al">Govt Recognitions</div></div>
+      <div class="awd-stat"><div class="an" data-count="3">3</div><div class="al">ISO Certifications</div></div>
+      <div class="awd-stat"><div class="an" data-count="8">8</div><div class="al">Client Choice Awards</div></div>
+      <div class="awd-stat"><div class="an" data-count="14">14</div><div class="al">Years of Excellence</div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SERVICES STRIP ═══════════════════════════════ -->
+<section class="services-strip">
+  <div class="container text-center">
+    <span class="section-eyebrow fade-up">What We Do</span>
+    <h2 class="section-title fade-up delay-1 mb-4">Our Core <span>Services</span></h2>
+    <div class="section-divider mx-auto fade-up delay-1 mb-4"></div>
+    <div class="fade-up delay-2">
+      <a class="svc-pill"><i class="bi bi-house-gear"></i> Industrial Facility Management</a>
+      <a class="svc-pill"><i class="bi bi-building-check"></i> Housekeeping Services</a>
+      <a class="svc-pill"><i class="bi bi-recycle"></i> Waste Management</a>
+      <a class="svc-pill"><i class="bi bi-tree-fill"></i> Landscaping &amp; Horticulture</a>
+      <a class="svc-pill"><i class="bi bi-shield-fill-check"></i> Security of Resources</a>
+      <a class="svc-pill"><i class="bi bi-bug-fill"></i> Pest Control</a>
+      <a class="svc-pill"><i class="bi bi-droplet-fill"></i> Sanitation &amp; Hygiene</a>
+      <a class="svc-pill"><i class="bi bi-people-fill"></i> Manpower Supply</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CTA STRIP ═══════════════════════════════ -->
+<!-- <section style="background: linear-gradient(90deg, var(--navy) 0%, var(--green-dark) 100%); padding: 70px 0;">
+  <div class="container text-center">
+    <h2 class="fade-up" style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:clamp(1.4rem,3vw,2.2rem); color:#fff; margin-bottom:12px;">Ready to Transform Your Facility?</h2>
+    <p class="fade-up delay-1" style="color:rgba(255,255,255,.75); margin-bottom:28px; font-size:.95rem;">Get in touch with our team today and experience the Sainath difference.</p>
+    <div class="fade-up delay-2">
+      <a href="#" class="btn btn-light btn-lg me-3 fw-700" style="border-radius:30px; font-weight:700; color:var(--navy); padding:12px 36px;">Get a Quote</a>
+      <a href="#" class="btn btn-outline-light btn-lg" style="border-radius:30px; font-weight:600; padding:12px 36px;">Our Services</a>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- footer starts -->
+
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <div class="footer-logo-img mb-3">
+              <img src="./assets/images/logo.png" alt="Logo" class="footer-logo" />
+            </div>
+            
+            <p>Sainath Sales and Services Pvt. Ltd. delivers world-class integrated facility management services across India. Together for a better future.</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="https://wa.me/919716222324"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <!-- <li><a href="#hero">Home</a></li> -->
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#brands">Clients</a></li> -->
+            <!-- <li><a href="#team">Our Team</a></li> -->
+            
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6">
+          <h5 class="footer-heading">Other Links</h5>
+          <ul class="footer-links">
+            <li><a href="#services">Career</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Contact Info</h5>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i>B-1 Surya Nagar
+Ghaziabad
+Uttar Pradesh 201011</li>
+            <li><i class="fas fa-phone-alt"></i><a href="tel:+911234567890">+91 9716222324</a></li>
+            <li><i class="fas fa-envelope"></i><a href="mailto:info@sainathservices.com">info@sainath.services</a></li>
+          </ul>
+          <!-- <div class="footer-cert mt-3">
+            <span class="cert-badge"><i class="fas fa-certificate"></i> ISO 9001:2015</span>
+            <span class="cert-badge"><i class="fas fa-shield-alt"></i> Verified</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+        <p class="mb-0 text-center">© 2026 Sainath Sales and Services Pvt. Ltd. | All rights reserved | Developed with ❤️ by <a class="text-gray-300 text-decoration-none" href="https://www.linkedin.com/in/ayushdce2/" target="_blank">Ayush</a></p>
+
+        
+        <!-- <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== FLOATING ELEMENTS ===================== -->
+
+<!-- Fixed Enquiry Sidebar -->
+<div id="enquirySidebar" class="enquiry-sidebar">
+  <div class="enquiry-tab" id="enquiryTab">
+    <i class="fas fa-comment-dots"></i>
+    <span>Quick Enquiry</span>
+  </div>
+  <div class="enquiry-form-panel" id="enquiryPanel">
+    <div class="eq-header">
+      <h6><i class="fas fa-headset me-2"></i>Quick Enquiry</h6>
+      <button class="eq-close" id="closeEnquiry"><i class="fas fa-times"></i></button>
+    </div>
+    <form id="quickEnquiryForm">
+      <input type="text" class="form-control mb-2" placeholder="Your Name" required />
+      <input type="tel" class="form-control mb-2" placeholder="Phone Number" required />
+      <input type="email" class="form-control mb-2" placeholder="Email Address" />
+      <select class="form-select mb-2">
+        <option value="">Select Service</option>
+        <option>Facility Management</option>
+        <option>Housekeeping</option>
+        <option>Green Cleaning</option>
+        <option>Pest Control</option>
+        <option>Other</option>
+      </select>
+      <textarea class="form-control mb-3" rows="3" placeholder="Your Message..."></textarea>
+      <button type="submit" class="btn btn-primary-brand w-100">Submit Enquiry</button>
+    </form>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<button id="goToTop" class="go-top-btn" title="Go to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/919716222324" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Download Brochure Float -->
+<a href="#" class="brochure-float" id="brochureFloat" title="Download Brochure">
+
+<i class="fas fa-book"></i>          
+
+</a>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/script.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("custom-language")
+        .addEventListener("change", function () {
+            changeLanguage(this.value);
+        });
+});
+
+function changeLanguage(lang) {
+    let interval = setInterval(() => {
+        let select = document.querySelector('.goog-te-combo');
+
+        if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event('change'));
+            clearInterval(interval);
+        }
+    }, 500);
+}
+</script>
+
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+<script>
+  // Intersection Observer for scroll animations
+  const els = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12 });
+  els.forEach(el => obs.observe(el));
+
+  // Number counter animation for hero stats
+  function animateCounters() {
+    document.querySelectorAll('.hero-stat .num').forEach(el => {
+      const target = parseInt(el.textContent);
+      if (isNaN(target)) return;
+      const suffix = el.textContent.replace(/[0-9]/g, '');
+      let start = 0;
+      const step = Math.ceil(target / 40);
+      const interval = setInterval(() => {
+        start = Math.min(start + step, target);
+        el.textContent = start + suffix;
+        if (start >= target) clearInterval(interval);
+      }, 30);
+    });
+  }
+
+  const heroObs = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) { animateCounters(); heroObs.disconnect(); }
+  }, { threshold: 0.3 });
+  const heroSection = document.querySelector('.about-hero');
+  if (heroSection) heroObs.observe(heroSection);
+</script>
+</body>
+</html>
