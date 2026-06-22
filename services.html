@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/header-footer.css" />
+  <link rel="stylesheet" href="./assets/css/services.css"/>
+</head>
+<body>
+
+
+
+
+
+    <div id="top-header">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <div class="top-contacts d-flex flex-wrap gap-3">
+        <a href="tel:+919716222324"><i class="fas fa-phone-alt me-1"></i>+91 9716222324</a>
+        <a href="mailto:info@sainathservices.com"><i class="fas fa-envelope me-1"></i>info@sainath.services</a>
+        <span><i class="fas fa-map-marker-alt me-1"></i>B-1 Surya Nagar, Ghaziabad, Uttar Pradesh 201011</span>
+      </div>
+      <div class="top-right d-flex align-items-center gap-3">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <!-- Language Toggler -->
+        <div class="lang-wrapper dropdown">
+          
+
+          <div class="translate-box">
+    <svg class="globe-icon" viewBox="0 0 24 24">
+        <path fill="currentColor"
+            d="M12 2A10 10 0 1 0 12 22A10 10 0 1 0 12 2zm6.93 9h-3.05a15.7 15.7 0 0 0-1.38-5.03A8.02 8.02 0 0 1 18.93 11zM12 4c1.24 1.53 2.12 4.08 2.36 7H9.64C9.88 8.08 10.76 5.53 12 4zm-2.5 1.97A15.7 15.7 0 0 0 8.12 11H5.07A8.02 8.02 0 0 1 9.5 5.97zM4.26 13h3.05a15.7 15.7 0 0 0 1.38 5.03A8.02 8.02 0 0 1 4.26 13zM12 20c-1.24-1.53-2.12-4.08-2.36-7h4.72C14.12 15.92 13.24 18.47 12 20zm2.5-1.97A15.7 15.7 0 0 0 15.88 13h3.05a8.02 8.02 0 0 1-4.43 5.03z"/>
+    </svg>
+
+    <select id="custom-language" >
+        <option value="">Language</option>
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+    </select>
+</div>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== MAIN NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container-fluid px-3 px-md-5 position-relative">
+    <a class="navbar-brand position-absolute" href="./index.html">
+      <img src="./assets/images/logo.png" alt="Sainath Logo" id="navLogo" />
+    </a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item "><a class="nav-link " href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="svcDrop" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Facility Management</a></li>
+            <li><a class="dropdown-item" href="#">Housekeeping</a></li>
+            <li><a class="dropdown-item" href="#">Green Cleaning</a></li>
+            <li><a class="dropdown-item" href="#">Pest Control</a></li>
+            <li><a class="dropdown-item" href="#">Landscaping</a></li>
+          </ul>
+        </li> -->
+        <li class="nav-item"><a class="nav-link active" href="./services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li> -->
+        <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-primary-brand" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- ════════════════════ PAGE HEADER ════════════════════ -->
+<header class="page-header">
+  <div class="container">
+    <div class="row align-items-end g-4">
+      <div class="col-lg-7">
+        <nav aria-label="breadcrumb" class="ph-breadcrumb fade-up">
+          <ol class="breadcrumb mb-2 align-items-center">
+            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house-fill me-1"></i>Home</a></li>
+            <li class="breadcrumb-item active">Our Services</li>
+          </ol>
+        </nav>
+        <h1 class="ph-title fade-up delay-1">Our <span>Services</span></h1>
+        <p class="ph-sub fade-up delay-2">Comprehensive facility management, housekeeping, sanitation, and support services — delivered by 5,000+ trained professionals across 8+ states of India.</p>
+      </div>
+      <div class="col-lg-5 fade-right">
+        <div class="ph-badges">
+          <div class="ph-badge"><i class="bi bi-check-circle-fill"></i><span>ISO Certified</span></div>
+          <div class="ph-badge"><i class="bi bi-people-fill"></i><span>5000+ Trained Staff</span></div>
+          <div class="ph-badge"><i class="bi bi-geo-alt-fill"></i><span>PAN India</span></div>
+          <div class="ph-badge"><i class="bi bi-headset"></i><span>24/7 Support</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ph-wave">
+    <svg viewBox="0 0 1440 52" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,26 C480,52 960,0 1440,26 L1440,52 L0,52 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+</header>
+
+<!-- ════════════════════ STICKY NAV ════════════════════ -->
+<div class="svc-nav-strip">
+  <div class="container">
+    <ul class="svc-nav">
+      <li><a href="#integrated-fm" class="active"><i class="bi bi-building-gear"></i> Integrated FM</a></li>
+      <li><a href="#housekeeping"><i class="bi bi-house-gear"></i> Housekeeping</a></li>
+      <li><a href="#green-cleaning"><i class="bi bi-tree-fill"></i> Green Cleaning</a></li>
+      <li><a href="#facility-care"><i class="bi bi-tools"></i> Facility Care</a></li>
+      <li><a href="#security"><i class="bi bi-shield-fill-check"></i> Security</a></li>
+      <li><a href="#pest-control"><i class="bi bi-bug-fill"></i> Pest Control</a></li>
+      <li><a href="#landscaping"><i class="bi bi-flower1"></i> Landscaping</a></li>
+      <li><a href="#technical"><i class="bi bi-wrench-adjustable"></i> Technical</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ════════════════════ SERVICE OVERVIEW CARDS ════════════════════ -->
+<section class="svc-intro">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-7 text-center">
+        <span class="eyebrow fade-up">What We Offer</span>
+        <h2 class="sec-title fade-up delay-1">End-to-End <span>Facility Solutions</span></h2>
+        <div class="divider mx-auto fade-up delay-1"></div>
+        <p class="text-muted fade-up delay-2" style="font-size:.9rem; line-height:1.8;">From integrated facility management to pest control and technical maintenance — Sainath delivers every service with trained professionals, proven systems, and a commitment to your satisfaction.</p>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-1"><div class="svc-intro-card svc-intro-card-integrated"><div class="ic z-1 position-relative"><i class="bi bi-building-gear z-1 position-relative"></i></div><h6 class="z-1 position-relative">Integrated FM</h6><p class="z-1 position-relative">Holistic facility operations for factories, hospitals, railways & offices.</p><div class="svc-intro-card-overlay z-0"></div></div></div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-2"><div class="svc-intro-card svc-intro-card-housekeeping"><div class="ic z-1 position-relative"><i class="bi bi-house-gear z-1 position-relative"></i></div><h6 class="z-1 position-relative">Housekeeping</h6><p class="z-1 position-relative">Professional daily & deep cleaning for every type of space.</p><div class="svc-intro-card-overlay z-0"></div></div></div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-3"><div class="svc-intro-card svc-intro-card-green"><div class="ic z-1 position-relative"><i class="bi bi-tree-fill z-1 position-relative"></i></div><h6 class="z-1 position-relative">Green Cleaning</h6><p class="z-1 position-relative">Eco-friendly, chemical-conscious cleaning for a sustainable tomorrow.</p><div class="svc-intro-card-overlay z-0"></div></div></div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-4"><div class="svc-intro-card svc-intro-card-garbage"><div class="ic z-1 position-relative"><i class="bi bi-tools z-1 position-relative"></i></div><h6 class="z-1 position-relative">Garbage Collection</h6><p class="z-1 position-relative">Efficient waste collection services with timely pickups and responsible disposal practices</p><div class="svc-intro-card-overlay z-0"></div></div></div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-1"><div class="svc-intro-card svc-intro-card-security"><div class="ic z-1 position-relative"><i class="bi bi-shield-fill-check z-1 position-relative"></i></div><h6 class="z-1 position-relative">Security</h6><p class="z-1 position-relative">On-ground security & surveillance for controlled, safe environments.</p><div class="svc-intro-card-overlay z-0"></div></div></div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-2"><div class="svc-intro-card svc-intro-card-pest"><div class="ic z-1 position-relative"><i class="bi bi-bug-fill z-1 position-relative"></i></div><h6 class="z-1 position-relative">Pest Control</h6><p class="z-1 position-relative">Eco-conscious pest management to safeguard health & hygiene.</p><div class="svc-intro-card-overlay z-0"></div></div></div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-3"><div class="svc-intro-card svc-intro-card-green"><div class="ic z-1 position-relative"><i class="bi bi-flower1 z-1 position-relative"></i></div><h6 class="z-1 position-relative">Landscaping</h6><p class="z-1 position-relative">Greening your premises with expert horticulture & garden care.</p><div class="svc-intro-card-overlay z-0"></div></div></div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-4"><div class="svc-intro-card svc-intro-card-green"><div class="ic z-1 position-relative"><i class="bi bi-wrench-adjustable z-1 position-relative"></i></div><h6 class="z-1 position-relative">Technical Support</h6><p class="z-1 position-relative">Mechanical, electrical & AMC services for uninterrupted operations.</p><div class="svc-intro-card-overlay z-0"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ STATS STRIP ════════════════════ -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3 fade-up delay-1"><div class="ss-stat"><div class="sn">5000+</div><div class="sl">Trained Professionals</div></div></div>
+      <div class="col-6 col-md-3 fade-up delay-2"><div class="ss-stat"><div class="sn">100+</div><div class="sl">Active Clients</div></div></div>
+      <div class="col-6 col-md-3 fade-up delay-3"><div class="ss-stat"><div class="sn">8+</div><div class="sl">States Covered</div></div></div>
+      <div class="col-6 col-md-3 fade-up delay-4"><div class="ss-stat"><div class="sn">14+</div><div class="sl">Years of Excellence</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════ 1. INTEGRATED FM ════════════════════ -->
+<section class="svc-block" id="integrated-fm">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 fade-left">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" alt="Integrated Facility Management" />
+          <span class="svc-img-badge"><i class="bi bi-building-gear me-1"></i> Integrated FM</span>
+        </div>
+      </div>
+      <div class="col-lg-6 svc-content fade-right">
+        <span class="svc-tag">Core Service</span>
+        <h2>Integrated <span>Facility Management</span></h2>
+        <div class="divider"></div>
+        <p>The facility is any place where people come to work — a factory, office, hospital, railway station, government building, or retail outlet. We maintain such facilities to keep them up and running so they can effectively serve their employees and customers at their best.</p>
+        <p>Our integrated approach means one point of contact manages all facility needs — eliminating coordination gaps between multiple vendors and ensuring consistent quality throughout your premises.</p>
+        <ul class="svc-feature-list">
+          <li><i class="bi bi-check-circle-fill"></i> Single-vendor, multi-service model</li>
+          <li><i class="bi bi-check-circle-fill"></i> SLA-driven performance metrics</li>
+          <li><i class="bi bi-check-circle-fill"></i> Hospitals & healthcare facilities</li>
+          <li><i class="bi bi-check-circle-fill"></i> Railways & metro stations</li>
+          <li><i class="bi bi-check-circle-fill"></i> Government buildings & PSUs</li>
+          <li><i class="bi bi-check-circle-fill"></i> Corporate offices & IT parks</li>
+          <li><i class="bi bi-check-circle-fill"></i> Real-time reporting & dashboards</li>
+          <li><i class="bi bi-check-circle-fill"></i> 24/7 on-call operations support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ 2. HOUSEKEEPING ════════════════════ -->
+<section class="svc-block svc-block-alt" id="housekeeping">
+  <div class="container">
+    <div class="row align-items-center g-5 flex-lg-row-reverse">
+      <div class="col-lg-6 fade-right">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Housekeeping Services" />
+          <span class="svc-img-badge"><i class="bi bi-house-gear me-1"></i> Housekeeping</span>
+        </div>
+      </div>
+      <div class="col-lg-6 svc-content fade-left">
+        <span class="svc-tag">Flagship Service</span>
+        <h2>Housekeeping <span>Excellence for Every Space</span></h2>
+        <div class="divider"></div>
+        <p>A clean space is a productive space. Our housekeeping services go beyond cleanliness — ensuring hygiene, comfort, and care for everyone who uses your facility. With 5,000+ trained professionals, we bring professionalism, attention to detail, and eco-friendly practices to make every space shine.</p>
+        <p>Whether it's a daily routine clean, a deep sanitisation, or specialised post-construction cleaning — we have a customized plan that fits your space, schedule, and budget.</p>
+        <ul class="svc-feature-list">
+          <li><i class="bi bi-check-circle-fill"></i> Daily routine housekeeping</li>
+          <li><i class="bi bi-check-circle-fill"></i> Deep cleaning & sanitisation</li>
+          <li><i class="bi bi-check-circle-fill"></i> Post-construction cleaning</li>
+          <li><i class="bi bi-check-circle-fill"></i> Restroom hygiene management</li>
+          <li><i class="bi bi-check-circle-fill"></i> Floor care & carpet cleaning</li>
+          <li><i class="bi bi-check-circle-fill"></i> Facade & glass cleaning</li>
+          <li><i class="bi bi-check-circle-fill"></i> Event & move-in/out cleaning</li>
+          <li><i class="bi bi-check-circle-fill"></i> Trained, uniformed staff</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ 3. GREEN CLEANING ════════════════════ -->
+<section class="svc-block svc-block-dark" id="green-cleaning">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 fade-left">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Green Cleaning" />
+          <span class="svc-img-badge"><i class="bi bi-tree-fill me-1"></i> Eco-Friendly</span>
+        </div>
+      </div>
+      <div class="col-lg-6 svc-content svc-content-dark fade-right">
+        <span class="svc-tag svc-tag-dark">Sustainability</span>
+        <h2 class="sec-title-white">Sustainability in Action: <span>Green Cleaning</span></h2>
+        <div class="divider"></div>
+        <p>Our team uses innovative, eco-friendly cleaning equipment surrounded by lush greenery. Their green uniforms and vertical garden settings represent our belief in sustainability and excellence — reflecting a harmonious blend of nature and technology.</p>
+        <p>Together, they inspire a cleaner, greener future for every environment — reducing chemical footprints, protecting indoor air quality, and contributing to the planet's health.</p>
+        <ul class="svc-feature-list">
+          <li><i class="bi bi-check-circle-fill"></i> Bio-degradable cleaning agents</li>
+          <li><i class="bi bi-check-circle-fill"></i> Zero-chemical sanitation options</li>
+          <li><i class="bi bi-check-circle-fill"></i> Water-efficient equipment</li>
+          <li><i class="bi bi-check-circle-fill"></i> LEED-compliant processes</li>
+          <li><i class="bi bi-check-circle-fill"></i> Waste segregation & recycling</li>
+          <li><i class="bi bi-check-circle-fill"></i> Indoor air quality monitoring</li>
+          <li><i class="bi bi-check-circle-fill"></i> Green Star rated products</li>
+          <li><i class="bi bi-check-circle-fill"></i> Eco-audit reporting available</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ 4. FACILITY CARE ════════════════════ -->
+<section class="svc-block" id="facility-care">
+  <div class="container">
+    <div class="row align-items-center g-5 flex-lg-row-reverse">
+      <div class="col-lg-6 fade-right">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" alt="Facility Care" />
+          <span class="svc-img-badge"><i class="bi bi-tools me-1"></i> Facility Care</span>
+        </div>
+      </div>
+      <div class="col-lg-6 svc-content fade-left">
+        <span class="svc-tag">Operations</span>
+        <h2>Empowering Businesses <span>Through Facility Care</span></h2>
+        <div class="divider"></div>
+        <p>Every organisation deserves a facility that works as hard as its people. Our facility management services are designed to optimise operations, improve efficiency, and create welcoming environments — from proactive maintenance to seamless operations, we help you stay ahead in delivering exceptional service and experience.</p>
+        <p>We conduct regular preventive maintenance schedules, ensuring that equipment downtime is minimised and your teams can focus entirely on their core work.</p>
+        <ul class="svc-feature-list">
+          <li><i class="bi bi-check-circle-fill"></i> Preventive maintenance (PPM)</li>
+          <li><i class="bi bi-check-circle-fill"></i> Breakdown response & repair</li>
+          <li><i class="bi bi-check-circle-fill"></i> HVAC system management</li>
+          <li><i class="bi bi-check-circle-fill"></i> Plumbing & civil maintenance</li>
+          <li><i class="bi bi-check-circle-fill"></i> Electrical systems upkeep</li>
+          <li><i class="bi bi-check-circle-fill"></i> Elevator & escalator care</li>
+          <li><i class="bi bi-check-circle-fill"></i> Help desk & ticketing system</li>
+          <li><i class="bi bi-check-circle-fill"></i> Monthly facility health reports</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ 5. SECURITY ════════════════════ -->
+<section class="svc-block svc-block-alt" id="security">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 fade-left">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80" alt="Security & Surveillance" />
+          <span class="svc-img-badge"><i class="bi bi-shield-fill-check me-1"></i> Security</span>
+        </div>
+      </div>
+      <div class="col-lg-6 svc-content fade-right">
+        <span class="svc-tag">Safety</span>
+        <h2>Security &amp; <span>Surveillance</span></h2>
+        <div class="divider"></div>
+        <p>Security & Surveillance is an essential aspect of any facility — ensuring a safe and secure environment for employees, visitors, and assets. Whether it's a factory, office, hospital, railway station, or government building, maintaining security is critical to ensure smooth operations.</p>
+        <p>We provide comprehensive security solutions — from CCTV surveillance to on-ground patrolling — to prevent unauthorised access and ensure real-time incident management, creating a secure workplace where people can work efficiently without any safety concerns.</p>
+        <ul class="svc-feature-list">
+          <li><i class="bi bi-check-circle-fill"></i> Trained armed & unarmed guards</li>
+          <li><i class="bi bi-check-circle-fill"></i> CCTV installation & monitoring</li>
+          <li><i class="bi bi-check-circle-fill"></i> Access control systems</li>
+          <li><i class="bi bi-check-circle-fill"></i> Perimeter & ground patrolling</li>
+          <li><i class="bi bi-check-circle-fill"></i> Fire safety compliance support</li>
+          <li><i class="bi bi-check-circle-fill"></i> Visitor management systems</li>
+          <li><i class="bi bi-check-circle-fill"></i> Incident reporting & escalation</li>
+          <li><i class="bi bi-check-circle-fill"></i> Night watch & 24×7 coverage</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ 6. PEST CONTROL ════════════════════ -->
+<section class="svc-block svc-block-dark" id="pest-control">
+  <div class="container">
+    <div class="row align-items-center g-5 flex-lg-row-reverse">
+      <div class="col-lg-6 fade-right">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800&q=80" alt="Pest Control Services" />
+          <span class="svc-img-badge"><i class="bi bi-bug-fill me-1"></i> Pest Control</span>
+        </div>
+      </div>
+      <div class="col-lg-6 svc-content svc-content-dark fade-left">
+        <span class="svc-tag svc-tag-dark">Health & Hygiene</span>
+        <h2 class="sec-title-white">Pest Control <span>Services</span></h2>
+        <div class="divider"></div>
+        <p>Our eco-conscious pest control solutions combine cleanliness and environmental care. Using green pest management practices and innovative, low-toxicity tools, we deliver spotless results while preserving the planet. Together, let's build a sustainable, healthier tomorrow.</p>
+        <p>Our certified pest technicians conduct thorough inspections and implement customized treatment plans — ensuring that your premises remain pest-free without compromising the health of your occupants or the environment.</p>
+        <ul class="svc-feature-list">
+          <li><i class="bi bi-check-circle-fill"></i> General pest management (AMC)</li>
+          <li><i class="bi bi-check-circle-fill"></i> Rodent control & trapping</li>
+          <li><i class="bi bi-check-circle-fill"></i> Termite treatment (pre & post)</li>
+          <li><i class="bi bi-check-circle-fill"></i> Cockroach & ant elimination</li>
+          <li><i class="bi bi-check-circle-fill"></i> Mosquito fogging & larviciding</li>
+          <li><i class="bi bi-check-circle-fill"></i> Beehive & bird control</li>
+          <li><i class="bi bi-check-circle-fill"></i> Eco-friendly gel-based treatments</li>
+          <li><i class="bi bi-check-circle-fill"></i> Quarterly inspection certificates</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ 7. LANDSCAPING ════════════════════ -->
+<section class="svc-block" id="landscaping">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 fade-left">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80" alt="Landscaping & Gardening" />
+          <span class="svc-img-badge"><i class="bi bi-flower1 me-1"></i> Landscaping</span>
+        </div>
+      </div>
+      <div class="col-lg-6 svc-content fade-right">
+        <span class="svc-tag">Green Spaces</span>
+        <h2>Landscaping <span>&amp; Gardening</span></h2>
+        <div class="divider"></div>
+        <p>Our landscaping and horticulture team transforms barren premises into thriving green spaces. We believe greenery is not just aesthetic — it improves air quality, reduces stress, and creates a welcoming environment for employees, residents, and visitors alike.</p>
+        <p>From rooftop gardens and vertical green walls to manicured lawns and seasonal flowering beds — we design, plant, and maintain every type of green space with expertise and passion.</p>
+        <ul class="svc-feature-list">
+          <li><i class="bi bi-check-circle-fill"></i> Garden design & installation</li>
+          <li><i class="bi bi-check-circle-fill"></i> Lawn maintenance & mowing</li>
+          <li><i class="bi bi-check-circle-fill"></i> Tree pruning & topiary</li>
+          <li><i class="bi bi-check-circle-fill"></i> Vertical gardens & green walls</li>
+          <li><i class="bi bi-check-circle-fill"></i> Drip irrigation systems</li>
+          <li><i class="bi bi-check-circle-fill"></i> Seasonal flower bed management</li>
+          <li><i class="bi bi-check-circle-fill"></i> Indoor plant supply & care</li>
+          <li><i class="bi bi-check-circle-fill"></i> Soil testing & composting</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ 8. TECHNICAL SUPPORT ════════════════════ -->
+<section class="svc-block svc-block-alt" id="technical">
+  <div class="container">
+    <div class="row align-items-center g-5 flex-lg-row-reverse">
+      <div class="col-lg-6 fade-right">
+        <div class="svc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80" alt="Technical Support & Maintenance" />
+          <span class="svc-img-badge"><i class="bi bi-wrench-adjustable me-1"></i> Technical</span>
+        </div>
+      </div>
+      <div class="col-lg-6 svc-content fade-left">
+        <span class="svc-tag">Engineering</span>
+        <h2>Technical Support <span>&amp; Maintenance</span></h2>
+        <div class="divider"></div>
+        <p>Our eco-conscious technical support solutions combine operational excellence with environmental care. Using modern maintenance practices and innovative diagnostic tools, we deliver spotless technical performance while preserving asset life. Together, let's build a sustainable, more efficient tomorrow.</p>
+        <p>Our certified engineers handle everything from routine AMC visits to emergency breakdowns — ensuring minimal downtime, maximum uptime, and fully compliant operations across all critical systems.</p>
+        <ul class="svc-feature-list">
+          <li><i class="bi bi-check-circle-fill"></i> Electrical panel & wiring work</li>
+          <li><i class="bi bi-check-circle-fill"></i> Generator & DG set maintenance</li>
+          <li><i class="bi bi-check-circle-fill"></i> Plumbing & drainage repairs</li>
+          <li><i class="bi bi-check-circle-fill"></i> Civil & painting works</li>
+          <li><i class="bi bi-check-circle-fill"></i> HVAC & AC servicing (AMC)</li>
+          <li><i class="bi bi-check-circle-fill"></i> BMS integration & monitoring</li>
+          <li><i class="bi bi-check-circle-fill"></i> Fire & safety system checks</li>
+          <li><i class="bi bi-check-circle-fill"></i> Emergency response teams</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ HOW WE WORK — PROCESS ════════════════════ -->
+<section class="process-section">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-6 text-center">
+        <span class="eyebrow eyebrow-white fade-up">Our Approach</span>
+        <h2 class="sec-title sec-title-white fade-up delay-1">How We <span>Deliver</span></h2>
+        <div class="divider mx-auto fade-up delay-1"></div>
+        <p class="fade-up delay-2" style="color:rgba(255,255,255,.65);font-size:.9rem;">A structured, transparent process from first contact to ongoing service delivery — ensuring nothing falls through the cracks.</p>
+      </div>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-4 col-lg-2 fade-up delay-1">
+        <div class="process-step">
+          <div class="ps-num">01</div>
+          <h6>Site Assessment</h6>
+          <p>Our team visits & audits your facility requirements in detail.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up delay-2">
+        <div class="process-step">
+          <div class="ps-num">02</div>
+          <h6>Custom Proposal</h6>
+          <p>We prepare a tailored scope of work, SLAs, and transparent pricing.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up delay-3">
+        <div class="process-step">
+          <div class="ps-num">03</div>
+          <h6>Team Deployment</h6>
+          <p>Trained, verified, uniformed staff deployed within agreed timelines.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up delay-1">
+        <div class="process-step">
+          <div class="ps-num">04</div>
+          <h6>Daily Operations</h6>
+          <p>Consistent execution with digital checklists and supervisor oversight.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up delay-2">
+        <div class="process-step">
+          <div class="ps-num">05</div>
+          <h6>Quality Audit</h6>
+          <p>Regular internal and third-party audits ensure standards are upheld.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up delay-3">
+        <div class="process-step">
+          <div class="ps-num">06</div>
+          <h6>Review & Improve</h6>
+          <p>Monthly client review meetings to refine, improve, and grow together.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ WHY CHOOSE US ════════════════════ -->
+<section class="why-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-6 text-center">
+        <span class="eyebrow fade-up">Our Edge</span>
+        <h2 class="sec-title fade-up delay-1">Why <span>Choose Sainath?</span></h2>
+        <div class="divider mx-auto fade-up delay-1"></div>
+        <p class="text-muted fade-up delay-2" style="font-size:.9rem;">Delivering unmatched quality, reliable support, and sustainable solutions that create lasting impact — for every client, every time.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-4 fade-up delay-1">
+        <div class="why-card"><div class="wc-icon"><i class="bi bi-people-fill"></i></div><h6>5000+ Trained Professionals</h6><p>All staff undergo NSDC-structured training and background verification before deployment at any client site.</p></div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up delay-2">
+        <div class="why-card"><div class="wc-icon"><i class="bi bi-patch-check-fill"></i></div><h6>ISO 9001:2015 Certified</h6><p>Our quality management systems are internationally certified — ensuring every process meets the highest global standards.</p></div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up delay-3">
+        <div class="why-card"><div class="wc-icon"><i class="bi bi-headset"></i></div><h6>24/7 Support</h6><p>Round-the-clock client support and emergency response — our teams are always on call, no matter the time or day.</p></div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up delay-1">
+        <div class="why-card"><div class="wc-icon"><i class="bi bi-geo-alt-fill"></i></div><h6>PAN India Presence</h6><p>Operations across 8+ states with local knowledge and on-ground teams — giving us the reach and agility you need.</p></div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up delay-2">
+        <div class="why-card"><div class="wc-icon"><i class="bi bi-tree-fill"></i></div><h6>Eco-Conscious Practices</h6><p>We use environmentally responsible products and processes that protect both your premises and the planet.</p></div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-up delay-3">
+        <div class="why-card"><div class="wc-icon"><i class="bi bi-graph-up-arrow"></i></div><h6>Transparent Reporting</h6><p>Regular digital reports, checklists, and monthly review meetings keep you fully informed about every service delivered.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ INDUSTRIES SERVED ════════════════════ -->
+<section class="industries-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-6 text-center">
+        <span class="eyebrow fade-up">Our Clients</span>
+        <h2 class="sec-title fade-up delay-1">Industries <span>We Serve</span></h2>
+        <div class="divider mx-auto fade-up delay-1"></div>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-1">
+        <div class="ind-card">
+          <div class="ind-card-bg" style="background-image:url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=70');"></div>
+          <div class="ind-card-body"><h6>Hospitals & Healthcare</h6><span>Sterile & compliant environments</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-2">
+        <div class="ind-card">
+          <div class="ind-card-bg" style="background-image:url('https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=70');"></div>
+          <div class="ind-card-body"><h6>Manufacturing & Factories</h6><span>Industrial-grade facility care</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-3">
+        <div class="ind-card">
+          <div class="ind-card-bg" style="background-image:url('https://images.unsplash.com/photo-1596568281929-f7ebad92d20e?w=600&q=70');"></div>
+          <div class="ind-card-body"><h6>Railways & Metro</h6><span>High-traffic station management</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-4">
+        <div class="ind-card">
+          <div class="ind-card-bg" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=70');"></div>
+          <div class="ind-card-body"><h6>Corporate Offices</h6><span>Professional workspace care</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-1">
+        <div class="ind-card">
+          <div class="ind-card-bg" style="background-image:url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=70');"></div>
+          <div class="ind-card-body"><h6>Educational Institutions</h6><span>Safe & hygienic campuses</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-2">
+        <div class="ind-card">
+          <div class="ind-card-bg" style="background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=70');"></div>
+          <div class="ind-card-body"><h6>Government Buildings</h6><span>PSU & municipal facilities</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-3">
+        <div class="ind-card">
+          <div class="ind-card-bg" style="background-image:url('https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=70');"></div>
+          <div class="ind-card-body"><h6>Hotels & Hospitality</h6><span>Impeccable guest environments</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 fade-up delay-4">
+        <div class="ind-card">
+          <div class="ind-card-bg" style="background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=70');"></div>
+          <div class="ind-card-body"><h6>Residential Complexes</h6><span>Apartment & society upkeep</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ CTA ════════════════════ -->
+<!-- <section class="svc-cta">
+  <div class="container text-center">
+    <h2 class="fade-up">Ready to Transform <span style="text-decoration:underline;text-decoration-color:rgba(255,255,255,.5);">Your Facility?</span></h2>
+    <p class="fade-up delay-1 mb-4">Get in touch with our team for a free site assessment and customised service proposal.</p>
+    <div class="fade-up delay-2 d-flex flex-wrap gap-3 justify-content-center">
+      <a href="#" class="btn btn-white btn-lg">Get a Free Quote</a>
+      <a href="#" class="btn btn-outline-white btn-lg">Call Us Now</a>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- footer starts -->
+
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <div class="footer-logo-img mb-3">
+              <img src="./assets/images/logo.png" alt="Logo" class="footer-logo" />
+            </div>
+            
+            <p>Sainath Sales and Services Pvt. Ltd. delivers world-class integrated facility management services across India. Together for a better future.</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="https://wa.me/919716222324"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <!-- <li><a href="#hero">Home</a></li> -->
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#brands">Clients</a></li> -->
+            <!-- <li><a href="#team">Our Team</a></li> -->
+            
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6">
+          <h5 class="footer-heading">Other Links</h5>
+          <ul class="footer-links">
+            <li><a href="#services">Career</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Contact Info</h5>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i>B-1 Surya Nagar
+Ghaziabad
+Uttar Pradesh 201011</li>
+            <li><i class="fas fa-phone-alt"></i><a href="tel:+911234567890">+91 9716222324</a></li>
+            <li><i class="fas fa-envelope"></i><a href="mailto:info@sainathservices.com">info@sainath.services</a></li>
+          </ul>
+          <!-- <div class="footer-cert mt-3">
+            <span class="cert-badge"><i class="fas fa-certificate"></i> ISO 9001:2015</span>
+            <span class="cert-badge"><i class="fas fa-shield-alt"></i> Verified</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+        <p class="mb-0 text-center">© 2026 Sainath Sales and Services Pvt. Ltd. | All rights reserved | Developed with ❤️ by <a class="text-gray-300 text-decoration-none" href="https://www.linkedin.com/in/ayushdce2/" target="_blank">Ayush</a></p>
+
+        
+        <!-- <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== FLOATING ELEMENTS ===================== -->
+
+<!-- Fixed Enquiry Sidebar -->
+<div id="enquirySidebar" class="enquiry-sidebar">
+  <div class="enquiry-tab" id="enquiryTab">
+    <i class="fas fa-comment-dots"></i>
+    <span>Quick Enquiry</span>
+  </div>
+  <div class="enquiry-form-panel" id="enquiryPanel">
+    <div class="eq-header">
+      <h6><i class="fas fa-headset me-2"></i>Quick Enquiry</h6>
+      <button class="eq-close" id="closeEnquiry"><i class="fas fa-times"></i></button>
+    </div>
+    <form id="quickEnquiryForm">
+      <input type="text" class="form-control mb-2" placeholder="Your Name" required />
+      <input type="tel" class="form-control mb-2" placeholder="Phone Number" required />
+      <input type="email" class="form-control mb-2" placeholder="Email Address" />
+      <select class="form-select mb-2">
+        <option value="">Select Service</option>
+        <option>Facility Management</option>
+        <option>Housekeeping</option>
+        <option>Green Cleaning</option>
+        <option>Pest Control</option>
+        <option>Other</option>
+      </select>
+      <textarea class="form-control mb-3" rows="3" placeholder="Your Message..."></textarea>
+      <button type="submit" class="btn btn-primary-brand w-100">Submit Enquiry</button>
+    </form>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<button id="goToTop" class="go-top-btn" title="Go to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/919716222324" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Download Brochure Float -->
+<a href="#" class="brochure-float" id="brochureFloat" title="Download Brochure">
+
+<i class="fas fa-book"></i>          
+
+</a>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/script.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("custom-language")
+        .addEventListener("change", function () {
+            changeLanguage(this.value);
+        });
+});
+
+function changeLanguage(lang) {
+    let interval = setInterval(() => {
+        let select = document.querySelector('.goog-te-combo');
+
+        if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event('change'));
+            clearInterval(interval);
+        }
+    }, 500);
+}
+</script>
+
+
+<script>
+  // Scroll animations
+  const animEls = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  animEls.forEach(el => obs.observe(el));
+
+  // Sticky nav active state on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.svc-nav a');
+  const navObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`.svc-nav a[href="#${e.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => navObs.observe(s));
+
+  // Smooth scroll for nav links
+  navLinks.forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+
+</body>
+</html>
