@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
   <style>
@@ -57,21 +57,8 @@
         </div>
         <!-- Language Toggler -->
         <div class="lang-wrapper dropdown">
-          <!-- <button class="btn btn-sm lang-btn dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown">
-            <i class="fas fa-globe me-1"></i><span id="currentLang">EN</span>
-          </button>
-           <ul class="dropdown-menu dropdown-menu-end lang-dropdown" aria-labelledby="langDropdown">
-            <li><a class="dropdown-item lang-item" href="#" data-lang="EN" data-name="English">🇬🇧 English</a></li>
-            <li><a class="dropdown-item lang-item" href="#" data-lang="HI" data-name="हिन्दी">🇮🇳 Hindi</a></li>
-            <li><a class="dropdown-item lang-item" href="#" data-lang="MR" data-name="मराठी">🇮🇳 Marathi</a></li>
-            <li><a class="dropdown-item lang-item" href="#" data-lang="GU" data-name="ગુજરાતી">🇮🇳 Gujarati</a></li>
-            <li><a class="dropdown-item lang-item" href="#" data-lang="FR" data-name="Français">🇫🇷 Français</a></li>
-            <li><a class="dropdown-item lang-item" href="#" data-lang="DE" data-name="Deutsch">🇩🇪 Deutsch</a></li>
-            <li><a class="dropdown-item lang-item" href="#" data-lang="AR" data-name="عربي">🇸🇦 Arabic</a></li>
-            <li><a class="dropdown-item lang-item" href="#" data-lang="ZH" data-name="中文">🇨🇳 Chinese</a></li>
-            <li><a class="dropdown-item lang-item" href="#" data-lang="ES" data-name="Español">🇪🇸 Spanish</a></li>
-            <li><a class="dropdown-item lang-item" href="#" data-lang="JA" data-name="日本語">🇯🇵 Japanese</a></li>
-          </ul> -->
+          
+          
 
           <div class="translate-box">
     <svg class="globe-icon" viewBox="0 0 24 24">
@@ -101,7 +88,7 @@
 <!-- ===================== MAIN NAVBAR ===================== -->
 <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
   <div class="container-fluid px-3 px-md-5 position-relative">
-    <a class="navbar-brand position-absolute" href="#">
+    <a class="navbar-brand position-absolute" href="./index.html">
       <img src="./assets/images/logo.png" alt="Sainath Logo" id="navLogo" />
     </a>
     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -109,7 +96,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-        <li class="nav-item "><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item "><a class="nav-link active" href="./index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="svcDrop" data-bs-toggle="dropdown">Services</a>
@@ -1450,10 +1437,9 @@ Uttar Pradesh 201011</li>
 
 <!-- Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+<script src="./assets/js/script.js"></script>
 
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 <script>
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
@@ -1481,5 +1467,6 @@ function changeLanguage(lang) {
     }, 500);
 }
 </script>
+
 </body>
 </html>

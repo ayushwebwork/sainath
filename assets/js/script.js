@@ -291,6 +291,7 @@
   };
 
   function initLanguageToggler() {
+    // console.log("hi");
     var items = document.querySelectorAll('.lang-item');
     var currentLangEl = document.getElementById('currentLang');
 
@@ -313,7 +314,7 @@
         } else {
           document.documentElement.setAttribute('dir', 'ltr');
         }
-
+console.loog(name);
         showToast('Language changed to ' + name);
       });
     });
