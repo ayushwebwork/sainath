@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/header-footer.css" />
+  <link rel="stylesheet" href="./assets/css/contact.css"/>
+</head>
+<body>
+
+
+
+
+
+    <div id="top-header">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <div class="top-contacts d-flex flex-wrap gap-3">
+        <a href="tel:+919716222324"><i class="fas fa-phone-alt me-1"></i>+91 9716222324</a>
+        <a href="mailto:info@sainathservices.com"><i class="fas fa-envelope me-1"></i>info@sainath.services</a>
+        <span><i class="fas fa-map-marker-alt me-1"></i>B-1 Surya Nagar, Ghaziabad, Uttar Pradesh 201011</span>
+      </div>
+      <div class="top-right d-flex align-items-center gap-3">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <!-- Language Toggler -->
+        <div class="lang-wrapper dropdown">
+          
+
+          <div class="translate-box">
+    <svg class="globe-icon" viewBox="0 0 24 24">
+        <path fill="currentColor"
+            d="M12 2A10 10 0 1 0 12 22A10 10 0 1 0 12 2zm6.93 9h-3.05a15.7 15.7 0 0 0-1.38-5.03A8.02 8.02 0 0 1 18.93 11zM12 4c1.24 1.53 2.12 4.08 2.36 7H9.64C9.88 8.08 10.76 5.53 12 4zm-2.5 1.97A15.7 15.7 0 0 0 8.12 11H5.07A8.02 8.02 0 0 1 9.5 5.97zM4.26 13h3.05a15.7 15.7 0 0 0 1.38 5.03A8.02 8.02 0 0 1 4.26 13zM12 20c-1.24-1.53-2.12-4.08-2.36-7h4.72C14.12 15.92 13.24 18.47 12 20zm2.5-1.97A15.7 15.7 0 0 0 15.88 13h3.05a8.02 8.02 0 0 1-4.43 5.03z"/>
+    </svg>
+
+    <select id="custom-language" >
+        <option value="">Language</option>
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+    </select>
+</div>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== MAIN NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container-fluid px-3 px-md-5 position-relative">
+    <a class="navbar-brand position-absolute" href="./index.html">
+      <img src="./assets/images/logo.png" alt="Sainath Logo" id="navLogo" />
+    </a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item "><a class="nav-link " href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="svcDrop" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Facility Management</a></li>
+            <li><a class="dropdown-item" href="#">Housekeeping</a></li>
+            <li><a class="dropdown-item" href="#">Green Cleaning</a></li>
+            <li><a class="dropdown-item" href="#">Pest Control</a></li>
+            <li><a class="dropdown-item" href="#">Landscaping</a></li>
+          </ul>
+        </li> -->
+        <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="./career.html">Career</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li> -->
+        <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-primary-brand active color_contact_page_class" href="./contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════════ PAGE HEADER ════════════════════ -->
+<header class="page-header">
+  <div class="container">
+    <div class="row align-items-end g-4">
+      <div class="col-lg-7">
+        <nav aria-label="breadcrumb" class="ph-breadcrumb fade-up mb-2">
+          <ol class="breadcrumb align-items-center">
+            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house-fill me-1"></i>Home</a></li>
+            <li class="breadcrumb-item active">Contact Us</li>
+          </ol>
+        </nav>
+        <h1 class="ph-title fade-up delay-1">Get In <span>Touch</span></h1>
+        <p class="ph-sub fade-up delay-2">We'd love to hear from you. Reach out for enquiries, partnerships, service requests, or just to say hello — our team is always ready to help.</p>
+      </div>
+      <div class="col-lg-5 fade-right">
+        <div class="ph-badges">
+          <div class="ph-badge"><i class="bi bi-headset"></i><span>24/7 Support</span></div>
+          <div class="ph-badge"><i class="bi bi-reply-fill"></i><span>Quick Response</span></div>
+          <div class="ph-badge"><i class="bi bi-geo-alt-fill"></i><span>PAN India</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ph-wave">
+    <svg viewBox="0 0 1440 52" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,26 C480,52 960,0 1440,26 L1440,52 L0,52 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+</header>
+
+<!-- ════════════════════ QUICK CONTACT STRIP ════════════════════ -->
+<div class="quick-strip">
+  <div class="container px-0">
+    <div class="quick-strip-inner">
+      <a href="tel:+919716222324" class="qs-item">
+        <div class="qs-icon"><i class="bi bi-telephone-fill"></i></div>
+        <div><div class="qs-label">Call Us</div><div class="qs-value">+91-9716222324</div></div>
+      </a>
+      <a href="mailto:info@sainath.services" class="qs-item">
+        <div class="qs-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div><div class="qs-label">Email Us</div><div class="qs-value">info@sainath.services</div></div>
+      </a>
+      <a href="#map-section" class="qs-item">
+        <div class="qs-icon"><i class="bi bi-geo-alt-fill"></i></div>
+        <div><div class="qs-label">Visit Us</div><div class="qs-value">B-1 Surya Nagar, Ghaziabad</div></div>
+      </a>
+      <a href="#" class="qs-item">
+        <div class="qs-icon"><i class="bi bi-clock-fill"></i></div>
+        <div><div class="qs-label">Working Hours</div><div class="qs-value">Mon–Sat, 9AM – 7PM</div></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════ MAIN CONTACT ════════════════════ -->
+<section class="contact-main">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- LEFT: FORM -->
+      <div class="col-lg-7 fade-left">
+        <div class="contact-form-wrap">
+          <span class="eyebrow">Send a Message</span>
+          <h2 class="sec-title mb-1">We'd Love to <span>Hear From You</span></h2>
+          <p style="color:var(--text-muted);font-size:.85rem;margin-bottom:28px;line-height:1.7;">Fill in the form below and our team will get back to you within <strong>24 hours</strong>.</p>
+
+          <div id="contactFormWrap">
+            <div class="form-section-lbl">Your Details</div>
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label class="form-label-c">Full Name <span>*</span></label>
+                <input type="text" class="form-ctrl" placeholder="e.g. Rahul Sharma" id="cName" />
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label-c">Phone Number <span>*</span></label>
+                <input type="tel" class="form-ctrl" placeholder="+91 98765 43210" id="cPhone" />
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label-c">Email Address <span>*</span></label>
+                <input type="email" class="form-ctrl" placeholder="you@company.com" id="cEmail" />
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label-c">Organisation / Company</label>
+                <input type="text" class="form-ctrl" placeholder="Your company name" id="cCompany" />
+              </div>
+            </div>
+
+            <div class="form-section-lbl">Enquiry Details</div>
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label class="form-label-c">Service Interested In <span>*</span></label>
+                <select class="form-ctrl" id="cService">
+                  <option value="">Select a service</option>
+                  <option>Integrated Facility Management</option>
+                  <option>Housekeeping Services</option>
+                  <option>Green / Eco Cleaning</option>
+                  <option>Facility Care & Maintenance</option>
+                  <option>Security & Surveillance</option>
+                  <option>Pest Control Services</option>
+                  <option>Landscaping & Gardening</option>
+                  <option>Technical Support & AMC</option>
+                  <option>Manpower Supply</option>
+                  <option>Other / General Enquiry</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label-c">City / Location</label>
+                <input type="text" class="form-ctrl" placeholder="City where service is needed" id="cCity" />
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label-c">Facility Type</label>
+                <select class="form-ctrl" id="cFacility">
+                  <option value="">Select facility type</option>
+                  <option>Corporate Office</option>
+                  <option>Hospital / Healthcare</option>
+                  <option>Factory / Industrial</option>
+                  <option>Railway / Metro Station</option>
+                  <option>Government Building</option>
+                  <option>Educational Institution</option>
+                  <option>Hotel / Hospitality</option>
+                  <option>Residential Complex</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label-c">Preferred Contact Time</label>
+                <select class="form-ctrl" id="cTime">
+                  <option value="">Any time</option>
+                  <option>Morning (9AM – 12PM)</option>
+                  <option>Afternoon (12PM – 4PM)</option>
+                  <option>Evening (4PM – 7PM)</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label-c">Message / Requirements <span>*</span></label>
+                <textarea class="form-ctrl" placeholder="Please describe your facility requirements, approximate area, frequency of service, or any other details..." id="cMessage"></textarea>
+              </div>
+            </div>
+
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="cConsent" />
+              <label class="form-check-label" for="cConsent" style="font-size:.78rem;color:var(--text-muted);">
+                I agree to be contacted by Sainath Sales &amp; Services Pvt. Ltd. regarding my enquiry. My information will not be shared with third parties.
+              </label>
+            </div>
+
+            <button class="submit-btn" onclick="submitContact()">
+              <i class="bi bi-send-fill"></i> Send Message
+            </button>
+          </div>
+
+          <!-- Success -->
+          <div class="form-success" id="contactSuccess">
+            <div class="succ-icon"><i class="bi bi-check-lg"></i></div>
+            <h4>Message Received!</h4>
+            <p>Thank you for reaching out to Sainath Sales &amp; Services. Our team will review your enquiry and respond within <strong>24 hours</strong>.<br><br>For urgent requirements, please call us directly at <a href="tel:+919716222324" style="color:var(--green-dark);font-weight:700;">+91-9716222324</a>.</p>
+            <button class="submit-btn mt-4" style="max-width:220px;margin:24px auto 0;" onclick="resetForm()"><i class="bi bi-arrow-left"></i> Send Another</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: INFO -->
+      <div class="col-lg-5 fade-right">
+
+        <!-- Address -->
+        <div class="info-card">
+          <div class="info-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <div>
+            <div class="info-card-label">Registered Office</div>
+            <div class="info-card-value">B-1 Surya Nagar, Ghaziabad<br>Uttar Pradesh – 201001</div>
+            <div class="info-card-sub mt-1"><a href="https://maps.google.com" target="_blank"><i class="bi bi-box-arrow-up-right me-1"></i>Get Directions</a></div>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="info-card">
+          <div class="info-card-icon"><i class="bi bi-telephone-fill"></i></div>
+          <div>
+            <div class="info-card-label">Phone Numbers</div>
+            <div class="info-card-value"><a href="tel:+919716222324">+91-9716222324</a></div>
+            <div class="info-card-sub">Available Mon–Sat, 9AM to 7PM</div>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="info-card">
+          <div class="info-card-icon"><i class="bi bi-envelope-fill"></i></div>
+          <div>
+            <div class="info-card-label">Email Addresses</div>
+            <div class="info-card-value"><a href="mailto:info@sainath.services">info@sainath.services</a></div>
+            <div class="info-card-sub">We respond within 24 business hours</div>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div class="info-card">
+          <div class="info-card-icon"><i class="bi bi-share-fill"></i></div>
+          <div style="flex:1;">
+            <div class="info-card-label">Follow Us</div>
+            <div class="info-card-value mb-2">Stay connected on social media</div>
+            <div class="social-row">
+              <a href="#" class="social-btn" title="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-btn" title="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <!-- <a href="#" class="social-btn" title="Twitter / X"><i class="bi bi-twitter-x"></i></a> -->
+              <a href="#" class="social-btn" title="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="social-btn" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="hours-card">
+          <h6><i class="bi bi-clock-fill"></i> Business Hours</h6>
+          <div class="hours-row"><span class="day">Monday – Friday</span><span class="time">9:00 AM – 7:00 PM <span class="badge-open">Open</span></span></div>
+          <div class="hours-row"><span class="day">Saturday</span><span class="time">9:00 AM – 5:00 PM <span class="badge-open">Open</span></span></div>
+          <div class="hours-row"><span class="day">Sunday</span><span class="time" style="opacity:.55;">Closed</span></div>
+          <div class="hours-row" style="border-bottom:none;padding-top:12px;"><span class="day" style="font-size:.75rem;color:rgba(255,255,255,.7);">Emergency / On-Site Support</span><span class="time" style="font-size:.75rem;"><i class="bi bi-check-circle-fill me-1"></i>24 × 7</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ OFFICE LOCATIONS ════════════════════ -->
+<section class="map-section" id="map-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-6 text-center">
+        <span class="eyebrow fade-up">Where We Are</span>
+        <h2 class="sec-title fade-up delay-1">Our <span>Office Locations</span></h2>
+        <div class="divider mx-auto fade-up delay-1"></div>
+        <p class="text-muted fade-up delay-2" style="font-size:.88rem;line-height:1.8;">With our registered office in Ghaziabad and operations across 8+ states, we are always close to where you need us.</p>
+      </div>
+    </div>
+
+    <!-- Office Cards -->
+    <div class="row g-4 mb-5">
+      <div class="col-sm-6 col-lg-3 fade-up delay-1">
+        <div class="office-card">
+          <span class="oc-tag">HQ · Registered Office</span>
+          <h6>Ghaziabad, Uttar Pradesh</h6>
+          <div class="oc-line"><i class="bi bi-geo-alt-fill"></i>B-1 Surya Nagar, Ghaziabad, UP – 201001</div>
+          <div class="oc-line"><i class="bi bi-telephone-fill"></i><a href="tel:+919716222324">+91-9716222324</a></div>
+          <div class="oc-line"><i class="bi bi-envelope-fill"></i><a href="mailto:info@sainath.services">info@sainath.services</a></div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 fade-up delay-2">
+        <div class="office-card">
+          <span class="oc-tag">Operations Office</span>
+          <h6>New Delhi, Delhi NCR</h6>
+          <div class="oc-line"><i class="bi bi-geo-alt-fill"></i>Delhi NCR Operations Centre</div>
+          <div class="oc-line"><i class="bi bi-telephone-fill"></i><a href="tel:+919716222324">+91-9716222324</a></div>
+          <div class="oc-line"><i class="bi bi-envelope-fill"></i><a href="mailto:delhi@sainath.services">delhi@sainath.services</a></div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 fade-up delay-3">
+        <div class="office-card">
+          <span class="oc-tag">Regional Office</span>
+          <h6>Nagpur, Maharashtra</h6>
+          <div class="oc-line"><i class="bi bi-geo-alt-fill"></i>Dhantoli, Nagpur, Maharashtra</div>
+          <div class="oc-line"><i class="bi bi-telephone-fill"></i><a href="tel:+919716222324">+91-9716222324</a></div>
+          <div class="oc-line"><i class="bi bi-envelope-fill"></i><a href="mailto:nagpur@sainath.services">nagpur@sainath.services</a></div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 fade-up delay-4">
+        <div class="office-card">
+          <span class="oc-tag">Branch Office</span>
+          <h6>Jaipur, Rajasthan</h6>
+          <div class="oc-line"><i class="bi bi-geo-alt-fill"></i>Jaipur Operations, Rajasthan</div>
+          <div class="oc-line"><i class="bi bi-telephone-fill"></i><a href="tel:+919716222324">+91-9716222324</a></div>
+          <div class="oc-line"><i class="bi bi-envelope-fill"></i><a href="mailto:jaipur@sainath.services">jaipur@sainath.services</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="map-wrap fade-up delay-2">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.174437553734!2d77.44683!3d28.6548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1d7c4d6b0a7%3A0x7c2d4c4c4d4c4c4c!2sSurya%20Nagar%2C%20Ghaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sainath Office Location">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ FAQ ════════════════════ -->
+<!-- <section class="faq-section">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-4 fade-left">
+        <span class="eyebrow eyebrow-dark">FAQs</span>
+        <h2 class="sec-title sec-title-white mb-3">Frequently Asked <span>Questions</span></h2>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,.6);font-size:.88rem;line-height:1.85;">Can't find what you're looking for? Reach out directly and our team will be happy to help.</p>
+        <a href="tel:+919716222324" class="btn-cta-outline mt-4 d-inline-flex"><i class="bi bi-telephone-fill"></i> Call Us Now</a>
+      </div>
+      <div class="col-lg-8 fade-right">
+        <div class="accordion faq-acc" id="faqAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                How do I get a quote for housekeeping or facility management services?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Simply fill out the contact form above with your facility details, service required, and location. Our team will conduct a free site assessment and provide a customised quote within 48 hours. You can also call us directly at +91-9716222324 for an immediate response.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Do you provide services outside Delhi NCR and Ghaziabad?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes! Sainath Sales & Services operates across 8+ states including Delhi NCR, Uttar Pradesh, Maharashtra, Rajasthan, Uttarakhand, Assam, Himachal Pradesh, Andhra Pradesh, and Tamil Nadu — with a growing PAN India presence.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Are your staff trained and background-verified?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Absolutely. All our 5,000+ professionals undergo NSDC-structured skill training, police verification, and thorough background checks before deployment. We maintain comprehensive staff records and ensure regular re-training for quality assurance.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                What types of facilities do you serve?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">We serve a wide range of facilities including corporate offices, hospitals & healthcare centres, industrial factories, government buildings, railway & metro stations, educational institutions, hotels & hospitality venues, and residential complexes.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                How quickly can you mobilise a team after contract signing?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">We typically mobilise teams within 7–10 working days of contract finalisation for standard deployments. For urgent or large-scale requirements, we have rapid deployment protocols that can reduce this to 3–5 days, depending on the location and scope.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                Do you offer Annual Maintenance Contracts (AMC)?
+              </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes, we offer flexible AMC packages for all our services including housekeeping, pest control, technical maintenance, and HVAC. AMCs are available on monthly, quarterly, half-yearly, and annual billing cycles with SLA-backed service guarantees.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ════════════════════ CTA BANNER ════════════════════ -->
+<!-- <section class="cta-band">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8 fade-left">
+        <h2>Ready to Transform Your Facility?</h2>
+        <p>Get a free site assessment and customised proposal from our expert team — no obligation.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end fade-right">
+        <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
+          <a href="tel:+919716222324" class="btn-cta-white"><i class="bi bi-telephone-fill"></i> Call Now</a>
+          <a href="mailto:info@sainath.services" class="btn-cta-outline"><i class="bi bi-envelope-fill"></i> Email Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- footer starts -->
+
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <div class="footer-logo-img mb-3">
+              <img src="./assets/images/logo.png" alt="Logo" class="footer-logo" />
+            </div>
+            
+            <p>Sainath Sales and Services Pvt. Ltd. delivers world-class integrated facility management services across India. Together for a better future.</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="https://wa.me/919716222324"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <!-- <li><a href="#hero">Home</a></li> -->
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#brands">Clients</a></li> -->
+            <!-- <li><a href="#team">Our Team</a></li> -->
+            
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6">
+          <h5 class="footer-heading">Other Links</h5>
+          <ul class="footer-links">
+            <li><a href="#services">Career</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Contact Info</h5>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i>B-1 Surya Nagar
+Ghaziabad
+Uttar Pradesh 201011</li>
+            <li><i class="fas fa-phone-alt"></i><a href="tel:+911234567890">+91 9716222324</a></li>
+            <li><i class="fas fa-envelope"></i><a href="mailto:info@sainathservices.com">info@sainath.services</a></li>
+          </ul>
+          <!-- <div class="footer-cert mt-3">
+            <span class="cert-badge"><i class="fas fa-certificate"></i> ISO 9001:2015</span>
+            <span class="cert-badge"><i class="fas fa-shield-alt"></i> Verified</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container-fluid px-3 px-md-5">
+      <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+        <p class="mb-0 text-center">© 2026 Sainath Sales and Services Pvt. Ltd. | All rights reserved | Developed with ❤️ by <a class="text-gray-300 text-decoration-none" href="https://www.linkedin.com/in/ayushdce2/" target="_blank">Ayush</a></p>
+
+        
+        <!-- <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== FLOATING ELEMENTS ===================== -->
+
+<!-- Fixed Enquiry Sidebar -->
+<div id="enquirySidebar" class="enquiry-sidebar">
+  <div class="enquiry-tab" id="enquiryTab">
+    <i class="fas fa-comment-dots"></i>
+    <span>Quick Enquiry</span>
+  </div>
+  <div class="enquiry-form-panel" id="enquiryPanel">
+    <div class="eq-header">
+      <h6><i class="fas fa-headset me-2"></i>Quick Enquiry</h6>
+      <button class="eq-close" id="closeEnquiry"><i class="fas fa-times"></i></button>
+    </div>
+    <form id="quickEnquiryForm">
+      <input type="text" class="form-control mb-2" placeholder="Your Name" required />
+      <input type="tel" class="form-control mb-2" placeholder="Phone Number" required />
+      <input type="email" class="form-control mb-2" placeholder="Email Address" />
+      <select class="form-select mb-2">
+        <option value="">Select Service</option>
+        <option>Facility Management</option>
+        <option>Housekeeping</option>
+        <option>Green Cleaning</option>
+        <option>Pest Control</option>
+        <option>Other</option>
+      </select>
+      <textarea class="form-control mb-3" rows="3" placeholder="Your Message..."></textarea>
+      <button type="submit" class="btn btn-primary-brand w-100">Submit Enquiry</button>
+    </form>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<button id="goToTop" class="go-top-btn" title="Go to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/919716222324" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Download Brochure Float -->
+<a href="#" class="brochure-float" id="brochureFloat" title="Download Brochure">
+
+<i class="fas fa-book"></i>          
+
+</a>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/script.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("custom-language")
+        .addEventListener("change", function () {
+            changeLanguage(this.value);
+        });
+});
+
+function changeLanguage(lang) {
+    let interval = setInterval(() => {
+        let select = document.querySelector('.goog-te-combo');
+
+        if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event('change'));
+            clearInterval(interval);
+        }
+    }, 500);
+}
+</script>
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+<script>
+  // Scroll animations
+  const animEls = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  animEls.forEach(el => obs.observe(el));
+
+  // Form submit
+  function submitContact() {
+    const name = document.getElementById('cName').value.trim();
+    const phone = document.getElementById('cPhone').value.trim();
+    const email = document.getElementById('cEmail').value.trim();
+    const service = document.getElementById('cService').value;
+    const message = document.getElementById('cMessage').value.trim();
+    const consent = document.getElementById('cConsent').checked;
+
+    if (!name || !phone || !email || !service || !message) {
+      alert('Please fill in all required fields marked with *');
+      return;
+    }
+    if (!consent) {
+      alert('Please accept the consent checkbox to proceed.');
+      return;
+    }
+    document.getElementById('contactFormWrap').style.display = 'none';
+    document.getElementById('contactSuccess').style.display = 'block';
+  }
+
+  function resetForm() {
+    ['cName','cPhone','cEmail','cCompany','cCity','cMessage'].forEach(id => document.getElementById(id).value = '');
+    ['cService','cFacility','cTime'].forEach(id => document.getElementById(id).selectedIndex = 0);
+    document.getElementById('cConsent').checked = false;
+    document.getElementById('contactFormWrap').style.display = 'block';
+    document.getElementById('contactSuccess').style.display = 'none';
+  }
+</script>
+</body>
+</html>
