@@ -678,7 +678,11 @@ overflow: auto;
     width: 100%;
     border-radius: 16px;
 }
+ 
+@media only screen and (max-width:767px){
 .footprint_img_wrap{
 height: 30rem;
     width: 40rem;
 }
+}
+

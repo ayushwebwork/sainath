@@ -185,7 +185,7 @@
     .industries-section { background: var(--white); padding: 90px 0; }
     .ind-card {
       border-radius: 16px; overflow: hidden;
-      position: relative; height: 180px;
+      position: relative; height: 16rem;
       display: flex; align-items: flex-end;
       background: var(--navy);
       transition: transform .3s;
@@ -304,5 +304,20 @@ background-image: url("../images/garbage_collection.jpg");
     
 }
 
+.svc-intro-card-landscaping{
+background-image: url("../images/Horticulture.jpg");
+      background-size: cover;
+    background-position: right;
+    
+}
 
+.svc-intro-card-technical_suport{
+background-image: url("../images/technical support.jpeg");
+      background-size: cover;
+    background-position: right;
+    
+}
 
+.why-section .why-card{
+  background-color: #ebebebd4;
+}
