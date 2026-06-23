@@ -702,6 +702,8 @@ body {
   object-fit: contain;
 }
 
-
-
-
+@media only screen and (max-width:767px){
+.navbar-nav.ms-auto.align-items-lg-center{
+  margin-top: 4rem;
+}
+}
