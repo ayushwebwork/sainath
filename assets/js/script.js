@@ -337,10 +337,13 @@ console.loog(name);
 
           // Create a simple PDF-like download simulation
           var link = document.createElement('a');
-          link.href = '#';
-          link.download = 'Sainath-Sales-Services-Brochure.pdf';
+          link.href = './broucher.pdf';
+          link.download = './broucher.pdf';
           // In production, replace with actual PDF URL
-          showToast('Brochure will be emailed to you. Please fill the contact form!');
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          showToast('Brochure Downloaded Successfully');
         });
       }
     });
