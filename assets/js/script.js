@@ -337,8 +337,8 @@ console.loog(name);
 
           // Create a simple PDF-like download simulation
           var link = document.createElement('a');
-          link.href = './broucher.pdf';
-          link.download = './broucher.pdf';
+          link.href = './Sainath Professional Company Profile.pdf';
+          link.download = './Sainath Professional Company Profile.pdf';
           // In production, replace with actual PDF URL
           document.body.appendChild(link);
           link.click();
