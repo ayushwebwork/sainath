@@ -480,9 +480,9 @@
       line-height: 1;
     }
     .award-featured-icon {
-      min-width: 90px; height: 90px;
+      min-width: 90px; height: 16rem;
       background: var(--green);
-      border-radius: 20px;
+      border-radius: 24px;
       display: flex; align-items: center; justify-content: center;
       font-size: 2.6rem; color: #fff;
       box-shadow: 0 12px 36px rgba(122,182,72,.4);
@@ -683,6 +683,13 @@ overflow: auto;
 .footprint_img_wrap{
 height: 30rem;
     width: 40rem;
+}
+.certificate-grid-card{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.certificate-grid-card .award-grid-card{
+  width: 100%!important;
 }
 }
 
