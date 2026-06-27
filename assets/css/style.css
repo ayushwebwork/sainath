@@ -671,7 +671,7 @@ li.nav-item.dropdown:hover:after{
   position: absolute;
   bottom: -80px; left: -80px;
   width: 350px; height: 350px;
-  background: radial-gradient(circle, rgba(122,182,40,0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgb(122 182 40 / 44%) 0%, transparent 70%);
   border-radius: 50%;
 }
 

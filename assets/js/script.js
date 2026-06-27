@@ -78,10 +78,10 @@
         ) {
           var id = section.getAttribute('id');
           navLinks.forEach(function (link) {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + id) {
-              link.classList.add('active');
-            }
+            // link.classList.remove('active');
+            // if (link.getAttribute('href') === '#' + id) {
+              // link.classList.add('active');
+            // }
           });
         }
       });
