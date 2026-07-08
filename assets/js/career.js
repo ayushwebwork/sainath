@@ -96,9 +96,9 @@ async function uploadResume(file) {
 
     }
 
-    if (file.size > 5 * 1024 * 1024) {
+    if (file.size > 10 * 1024 * 1024) {
 
-        alert("Maximum allowed file size is 5 MB.");
+        alert("Maximum allowed file size is 10 MB.");
 
         return;
 
@@ -113,6 +113,8 @@ async function uploadResume(file) {
 
     formData.append("file", file);
     formData.append("upload_preset", UPLOAD_PRESET);
+    formData.append("use_filename", "true");
+    formData.append("unique_filename", "true");
 
     try {
 
@@ -120,7 +122,7 @@ async function uploadResume(file) {
 
         xhr.open(
             "POST",
-            `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/auto/upload`
+            `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/raw/upload`
         );
 
         xhr.upload.addEventListener("progress", function (e) {
@@ -148,6 +150,7 @@ async function uploadResume(file) {
                 resumeUploaded = true;
 
                 resumeUrl.value = response.secure_url;
+console.log(response);
 
                 progressBar.classList.remove("progress-bar-animated");
 
