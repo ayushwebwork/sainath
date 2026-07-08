@@ -113,8 +113,7 @@ async function uploadResume(file) {
 
     formData.append("file", file);
     formData.append("upload_preset", UPLOAD_PRESET);
-    formData.append("use_filename", "true");
-    formData.append("unique_filename", "true");
+
 
     try {
 
