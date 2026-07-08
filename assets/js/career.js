@@ -141,7 +141,7 @@ async function uploadResume(file) {
         });
 
         xhr.onload = function () {
-
+// console.log(xhr.responseText);
             if (xhr.status == 200) {
 
                 const response = JSON.parse(xhr.responseText);
@@ -149,7 +149,7 @@ async function uploadResume(file) {
                 resumeUploaded = true;
 
                 resumeUrl.value = response.secure_url;
-console.log(response);
+// console.log(response);
 
                 progressBar.classList.remove("progress-bar-animated");
 
@@ -188,7 +188,7 @@ console.log(response);
 
     catch (err) {
 
-        console.log(err);
+        // console.log(err);
 
         alert("Upload Error");
 
