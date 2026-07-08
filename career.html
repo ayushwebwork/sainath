@@ -12,6 +12,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/header-footer.css" />
   <link rel="stylesheet" href="./assets/css/career.css"/>
+  <style>
+    .cv-upload-zone{
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cv-upload-zone.dragging{
+    border:2px dashed #0d6efd;
+    background:#eef5ff;
+}
+
+.cv-upload-zone.uploaded{
+    border:2px solid #198754;
+    background:#f4fff8;
+}
+
+.progress{
+    height:10px;
+    border-radius:20px;
+}
+
+.cv-file-name{
+    font-weight:600;
+    color:#198754;
+}
+  </style>
 </head>
 <body>
 
@@ -404,91 +430,255 @@
       <p>Fill in the details below and attach your CV. We'll get back to you within 3 business days.</p>
     </div>
     <div class="apply-body">
-      <div id="applyFormContent">
-        <div class="form-section-label">Personal Information</div>
-        <div class="row g-3 mb-3">
-          <div class="col-sm-6">
-            <label class="form-label-custom">Full Name <span>*</span></label>
-            <input type="text" class="form-ctrl" placeholder="e.g. Rahul Sharma" id="applyName" />
-          </div>
-          <div class="col-sm-6">
-            <label class="form-label-custom">Phone Number <span>*</span></label>
-            <input type="tel" class="form-ctrl" placeholder="+91 98765 43210" id="applyPhone" />
-          </div>
-          <div class="col-sm-6">
-            <label class="form-label-custom">Email Address <span>*</span></label>
-            <input type="email" class="form-ctrl" placeholder="rahul@example.com" id="applyEmail" />
-          </div>
-          <div class="col-sm-6">
-            <label class="form-label-custom">Current Location <span>*</span></label>
-            <input type="text" class="form-ctrl" placeholder="City, State" id="applyCity" />
-          </div>
+      <form id="applyFormContent"
+      name="job-application"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/success.html">
+
+    <!-- Required for Netlify -->
+    <input type="hidden" name="form-name" value="job-application">
+
+    <!-- Honeypot -->
+    <p hidden>
+        <label>
+            Don't fill this out:
+            <input name="bot-field">
+        </label>
+    </p>
+
+    <div class="form-section-label">Personal Information</div>
+
+    <div class="row g-3 mb-3">
+
+        <div class="col-sm-6">
+            <label class="form-label-custom">
+                Full Name <span>*</span>
+            </label>
+
+            <input
+                type="text"
+                class="form-ctrl"
+                id="applyName"
+                name="Full Name"
+                placeholder="e.g. Rahul Sharma"
+                required>
         </div>
 
-        <div class="form-section-label">Professional Details</div>
-        <div class="row g-3 mb-3">
-          <div class="col-sm-6">
-            <label class="form-label-custom">Total Experience <span>*</span></label>
-            <select class="form-ctrl" id="applyExp">
-              <option value="">Select experience</option>
-              <option>Fresher (0 years)</option>
-              <option>1 – 2 years</option>
-              <option>2 – 4 years</option>
-              <option>4 – 6 years</option>
-              <option>6+ years</option>
+        <div class="col-sm-6">
+            <label class="form-label-custom">
+                Phone Number <span>*</span>
+            </label>
+
+            <input
+                type="tel"
+                class="form-ctrl"
+                id="applyPhone"
+                name="Phone Number"
+                placeholder="+91 98765 43210"
+                required>
+        </div>
+
+        <div class="col-sm-6">
+            <label class="form-label-custom">
+                Email Address <span>*</span>
+            </label>
+
+            <input
+                type="email"
+                class="form-ctrl"
+                id="applyEmail"
+                name="Email Address"
+                placeholder="rahul@example.com"
+                required>
+        </div>
+
+        <div class="col-sm-6">
+            <label class="form-label-custom">
+                Current Location <span>*</span>
+            </label>
+
+            <input
+                type="text"
+                class="form-ctrl"
+                id="applyCity"
+                name="Current Location"
+                placeholder="City, State"
+                required>
+        </div>
+
+    </div>
+
+    <div class="form-section-label">Professional Details</div>
+
+    <div class="row g-3 mb-3">
+
+        <div class="col-sm-6">
+
+            <label class="form-label-custom">
+                Total Experience <span>*</span>
+            </label>
+
+            <select
+                class="form-ctrl"
+                id="applyExp"
+                name="Total Experience"
+                required>
+
+                <option value="">Select experience</option>
+                <option>Fresher (0 years)</option>
+                <option>1 – 2 years</option>
+                <option>2 – 4 years</option>
+                <option>4 – 6 years</option>
+                <option>6+ years</option>
+
             </select>
-          </div>
-          <div class="col-sm-6">
-            <label class="form-label-custom">Current / Last CTC</label>
-            <input type="text" class="form-ctrl" placeholder="e.g. ₹3.5 LPA" id="applyCtc" />
-          </div>
-          <div class="col-sm-6">
-            <label class="form-label-custom">Expected CTC <span>*</span></label>
-            <input type="text" class="form-ctrl" placeholder="e.g. ₹4.5 LPA" id="applyExpCtc" />
-          </div>
-          <div class="col-sm-6">
-            <label class="form-label-custom">Notice Period</label>
-            <select class="form-ctrl" id="applyNotice">
-              <option value="">Select notice period</option>
-              <option>Immediate / Serving notice</option>
-              <option>15 days</option>
-              <option>30 days</option>
-              <option>60 days</option>
-              <option>90 days</option>
+
+        </div>
+
+        <div class="col-sm-6">
+
+            <label class="form-label-custom">
+                Current / Last CTC
+            </label>
+
+            <input
+                type="text"
+                class="form-ctrl"
+                id="applyCtc"
+                name="Current / Last CTC"
+                placeholder="e.g. ₹3.5 LPA">
+
+        </div>
+
+        <div class="col-sm-6">
+
+            <label class="form-label-custom">
+                Expected CTC <span>*</span>
+            </label>
+
+            <input
+                type="text"
+                class="form-ctrl"
+                id="applyExpCtc"
+                name="Expected CTC"
+                placeholder="e.g. ₹4.5 LPA"
+                required>
+
+        </div>
+
+        <div class="col-sm-6">
+
+            <label class="form-label-custom">
+                Notice Period
+            </label>
+
+            <select
+                class="form-ctrl"
+                id="applyNotice"
+                name="Notice Period">
+
+                <option value="">Select notice period</option>
+                <option>Immediate / Serving notice</option>
+                <option>15 days</option>
+                <option>30 days</option>
+                <option>60 days</option>
+                <option>90 days</option>
+
             </select>
-          </div>
-          <!-- <div class="col-12">
-            <label class="form-label-custom">Current / Last Employer</label>
-            <input type="text" class="form-ctrl" placeholder="Company name" id="applyEmployer" />
-          </div> -->
+
         </div>
 
-        <div class="form-section-label">Upload CV / Resume</div>
-        <div class="cv-upload-zone mb-3" id="uploadZone">
-          <input type="file" accept=".pdf,.doc,.docx" id="cvFile" onchange="handleFileChange(this)" />
-          <div class="uz-icon"><i class="bi bi-cloud-arrow-up-fill"></i></div>
-          <div class="uz-text">Click to upload or drag & drop your CV</div>
-          <div class="uz-sub">PDF, DOC, or DOCX — max 5 MB</div>
-          <div class="cv-file-name" id="cvFileName"><i class="bi bi-file-earmark-check-fill me-1"></i><span></span></div>
+    </div>
+
+    <div class="form-section-label">
+        Upload CV / Resume
+    </div>
+
+    <div class="cv-upload-zone mb-3" id="uploadZone">
+
+        <input
+            type="file"
+            id="cvFile"
+            accept=".pdf,.doc,.docx"
+            hidden>
+
+        <!-- Resume URL saved by Cloudinary -->
+        <input
+            type="hidden"
+            id="resumeUrl"
+            name="Resume URL">
+
+        <div class="uz-icon">
+            <i class="bi bi-cloud-arrow-up-fill"></i>
         </div>
 
-        <!-- <div class="form-section-label">Cover Note (Optional)</div>
-        <div class="mb-4">
-          <label class="form-label-custom">Why do you want to join Sainath?</label>
-          <textarea class="form-ctrl" placeholder="Tell us a bit about yourself and why you'd be a great fit..." id="applyCover"></textarea>
-        </div> -->
-
-        <div class="form-check mb-4">
-          <input class="form-check-input" type="checkbox" id="applyConsent" />
-          <label class="form-check-label" for="applyConsent" style="font-size:.8rem;color:var(--text-muted);">
-            I agree that my personal information and CV may be stored and used by Sainath Sales & Services Pvt. Ltd. for recruitment purposes.
-          </label>
+        <div class="uz-text">
+            Click to upload or drag & drop your CV
         </div>
 
-        <button class="submit-btn" onclick="submitApplication()">
-          <i class="bi bi-send-fill"></i> Submit Application
-        </button>
-      </div>
+        <div class="uz-sub">
+            PDF, DOC or DOCX (Maximum 5 MB)
+        </div>
+
+        <div class="progress mt-3 d-none" id="uploadProgress">
+
+            <div
+                id="uploadBar"
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                style="width:0%">
+
+                0%
+
+            </div>
+
+        </div>
+
+        <div
+            class="cv-file-name mt-3 d-none"
+            id="cvFileName">
+
+            <i class="bi bi-file-earmark-check-fill text-success me-1"></i>
+
+            <span></span>
+
+        </div>
+
+    </div>
+
+    <div class="form-check mb-4">
+
+        <input
+            class="form-check-input"
+            type="checkbox"
+            id="applyConsent"
+            name="Consent"
+            required>
+
+        <label
+            class="form-check-label"
+            for="applyConsent"
+            style="font-size:.8rem;color:var(--text-muted);">
+
+            I agree that my personal information and CV may be stored and used by
+            Sainath Sales &amp; Services Pvt. Ltd. for recruitment purposes.
+
+        </label>
+
+    </div>
+
+    <button
+        type="submit"
+        class="submit-btn">
+
+        <i class="bi bi-send-fill"></i>
+
+        Submit Application
+
+    </button>
+
+</form>
 
       <!-- Success Screen -->
       <div class="success-screen" id="applySuccess">
@@ -955,5 +1145,6 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') { closeJobModal(); closeApplyModal(); }
 });
 </script>
+<script src="./assets/js/career.js"></script>
 </body>
 </html>

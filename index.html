@@ -1242,31 +1242,84 @@ display: flex;
         </div>
       </div>
       <div class="col-lg-7 reveal-right">
-        <form id="contactForm" class="contact-form" novalidate>
-          <div class="row g-lg-3">
-            <div class="col-md-6">
-              <label class="form-label">Full Name *</label>
-              <input type="text" class="form-control" placeholder="Your Full Name" required />
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Company Name</label>
-              <input type="text" class="form-control" placeholder="Company / Organization" />
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Email Address *</label>
-              <input type="email" class="form-control" placeholder="your@email.com" required />
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Phone Number *</label>
-              <input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX" required />
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">City</label>
-              <input type="text" class="form-control" placeholder="Your City" />
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Service Required</label>
-              <select class="form-select">
+        <form
+    id="contactForm"
+    class="contact-form"
+    name="homepagecontact"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    action="/success.html"
+    novalidate>
+
+    <!-- Required for Netlify -->
+    <input type="hidden" name="form-name" value="contact">
+
+    <!-- Honeypot -->
+    <p hidden>
+        <label>
+            Don't fill this out:
+            <input name="bot-field">
+        </label>
+    </p>
+
+    <div class="row g-lg-3">
+
+        <div class="col-md-6">
+            <label class="form-label">Full Name *</label>
+            <input
+                type="text"
+                class="form-control"
+                name="Full Name"
+                placeholder="Your Full Name"
+                required>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Company Name</label>
+            <input
+                type="text"
+                class="form-control"
+                name="Company Name"
+                placeholder="Company / Organization">
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Email Address *</label>
+            <input
+                type="email"
+                class="form-control"
+                name="Email Address"
+                placeholder="your@email.com"
+                required>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Phone Number *</label>
+            <input
+                type="tel"
+                class="form-control"
+                name="Phone Number"
+                placeholder="+91 XXXXX XXXXX"
+                required>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">City</label>
+            <input
+                type="text"
+                class="form-control"
+                name="City"
+                placeholder="Your City">
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Service Required</label>
+
+            <select
+                class="form-select"
+                name="Service Required">
+
                 <option value="">Select Service</option>
                 <option>Integrated Facility Management</option>
                 <option>Housekeeping</option>
@@ -1275,19 +1328,31 @@ display: flex;
                 <option>Landscaping</option>
                 <option>Security & Manpower</option>
                 <option>Other</option>
-              </select>
-            </div>
-            <div class="col-12">
-              <label class="form-label">Your Message *</label>
-              <textarea class="form-control" rows="4" placeholder="Tell us about your requirements..." required></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary-brand w-100">
-                <i class="fas fa-paper-plane me-2"></i>Send Enquiry
-              </button>
-            </div>
-          </div>
-        </form>
+
+            </select>
+        </div>
+
+        <div class="col-12">
+            <label class="form-label">Your Message *</label>
+
+            <textarea
+                class="form-control"
+                name="Message"
+                rows="4"
+                placeholder="Tell us about your requirements..."
+                required></textarea>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary-brand w-100">
+                <i class="fas fa-paper-plane me-2"></i>
+                Send Enquiry
+            </button>
+        </div>
+
+    </div>
+
+</form>
       </div>
     </div>
   </div>
