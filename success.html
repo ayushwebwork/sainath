@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Thank You</title>
+
+<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+
+    font-family:Poppins,sans-serif;
+
+    background:
+    radial-gradient(circle at top left,#9fd23633 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#9fd23622 0%,transparent 40%),
+    linear-gradient(135deg,#122A72,#19398C);
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+}
+
+.success-card{
+
+    max-width:720px;
+
+    width:94%;
+
+    border:none;
+
+    border-radius:24px;
+
+    padding:60px 50px;
+
+    text-align:center;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+
+    animation:fadeUp .8s;
+
+}
+
+.success-icon{
+
+    width:110px;
+
+    height:110px;
+
+    background:#8bc53f;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:48px;
+
+    animation:pop .6s;
+
+}
+
+h1{
+
+    font-family:"Playfair Display",serif;
+
+    color:#13296c;
+
+    margin-top:30px;
+
+    font-size:2.4rem;
+
+}
+
+.lead{
+
+    color:#6b7280;
+
+}
+
+.info-box{
+
+    background:#f6fbef;
+
+    border-left:5px solid #8bc53f;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    margin-top:35px;
+
+}
+
+.info-box i{
+
+    color:#8bc53f;
+
+}
+
+.btn-theme{
+
+    background:#13296c;
+
+    color:#fff;
+
+    border-radius:40px;
+
+    padding:13px 35px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-theme:hover{
+
+    background:#1c43a0;
+
+    color:#fff;
+
+    transform:translateY(-2px);
+
+}
+
+.countdown{
+
+    color:#6b7280;
+
+    margin-top:25px;
+
+}
+
+.contact{
+
+    margin-top:35px;
+
+    color:#555;
+
+}
+
+.contact i{
+
+    color:#8bc53f;
+
+}
+
+@keyframes pop{
+
+0%{
+
+transform:scale(0);
+
+}
+
+80%{
+
+transform:scale(1.15);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card success-card">
+
+    <div class="success-icon">
+
+        <i class="fas fa-check"></i>
+
+    </div>
+
+    <h1>Thank You!</h1>
+
+    <p class="lead">
+
+        Your enquiry has been submitted successfully.
+
+        <br>
+
+        Our team has received your request and will contact you shortly.
+
+    </p>
+
+    
+
+    <div class="mt-4">
+
+        <button class="btn btn-theme" onclick="goBack()">
+
+            <i class="fas fa-arrow-left me-2"></i>
+
+            Return to Previous Page
+
+        </button>
+
+    </div>
+
+    <div class="countdown">
+
+        Redirecting in
+
+        <strong id="counter">5</strong>
+
+        seconds...
+
+    </div>
+
+    
+
+</div>
+
+<script>
+
+const fallback="/";
+
+const previousPage=sessionStorage.getItem("returnPage") || document.referrer || fallback;
+
+function goBack(){
+
+    window.location.href=previousPage;
+
+}
+
+let sec=5;
+
+const timer=document.getElementById("counter");
+
+const interval=setInterval(function(){
+
+    sec--;
+
+    timer.innerHTML=sec;
+
+    if(sec<=0){
+
+        clearInterval(interval);
+
+        window.location.href=previousPage;
+
+    }
+
+},1000);
+
+</script>
+
+</body>
+
+</html>

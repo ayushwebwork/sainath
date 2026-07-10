@@ -211,6 +211,24 @@
   /* ============================================
      7. MAIN CONTACT FORM SUBMISSION
   ============================================ */
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const forms = document.querySelectorAll("form[data-netlify='true']");
+
+    forms.forEach(form => {
+
+        form.addEventListener("submit", function () {
+
+            sessionStorage.setItem("returnPage", window.location.href);
+
+        });
+
+    });
+
+});
+
   // function initFormSubmission() {
   //   var form = document.getElementById('contactForm');
   //   if (!form) return;
