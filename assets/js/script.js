@@ -12,7 +12,7 @@
     initCounterAnimation();
     initGoToTop();
     initEnquirySidebar();
-    initFormSubmission();
+    // initFormSubmission();
     initLanguageToggler();
     initBrochureDownload();
     initHeroTypingEffect();
