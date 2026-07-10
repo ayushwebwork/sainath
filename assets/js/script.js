@@ -211,57 +211,57 @@
   /* ============================================
      7. MAIN CONTACT FORM SUBMISSION
   ============================================ */
-  function initFormSubmission() {
-    var form = document.getElementById('contactForm');
-    if (!form) return;
+  // function initFormSubmission() {
+  //   var form = document.getElementById('contactForm');
+  //   if (!form) return;
 
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
+  //   form.addEventListener('submit', function (e) {
+  //     e.preventDefault();
 
-      // Basic validation
-      var inputs = form.querySelectorAll('[required]');
-      var valid = true;
-      inputs.forEach(function (input) {
-        if (!input.value.trim()) {
-          valid = false;
-          input.classList.add('is-invalid');
-        } else {
-          input.classList.remove('is-invalid');
-        }
-      });
+  //     // Basic validation
+  //     var inputs = form.querySelectorAll('[required]');
+  //     var valid = true;
+  //     inputs.forEach(function (input) {
+  //       if (!input.value.trim()) {
+  //         valid = false;
+  //         input.classList.add('is-invalid');
+  //       } else {
+  //         input.classList.remove('is-invalid');
+  //       }
+  //     });
 
-      if (!valid) return;
+  //     if (!valid) return;
 
-      // Simulate submission
-      var btn = form.querySelector('button[type="submit"]');
-      var originalText = btn.innerHTML;
-      btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
-      btn.disabled = true;
+  //     // Simulate submission
+  //     var btn = form.querySelector('button[type="submit"]');
+  //     var originalText = btn.innerHTML;
+  //     btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+  //     btn.disabled = true;
 
-      setTimeout(function () {
-        btn.innerHTML = '<i class="fas fa-check me-2"></i>Enquiry Sent!';
-        btn.style.background = '#27ae60';
-        showToast('Your enquiry has been submitted! We\'ll reach out within 24 hours.');
-        form.reset();
+  //     setTimeout(function () {
+  //       btn.innerHTML = '<i class="fas fa-check me-2"></i>Enquiry Sent!';
+  //       btn.style.background = '#27ae60';
+  //       showToast('Your enquiry has been submitted! We\'ll reach out within 24 hours.');
+  //       form.reset();
 
-        setTimeout(function () {
-          btn.innerHTML = originalText;
-          btn.disabled = false;
-          btn.style.background = '';
-        }, 4000);
-      }, 1800);
-    });
+  //       setTimeout(function () {
+  //         btn.innerHTML = originalText;
+  //         btn.disabled = false;
+  //         btn.style.background = '';
+  //       }, 4000);
+  //     }, 1800);
+  //   });
 
-    // Live validation
-    form.querySelectorAll('[required]').forEach(function (el) {
-      el.addEventListener('input', function () {
-        if (this.value.trim()) {
-          this.classList.remove('is-invalid');
-          this.classList.add('is-valid');
-        }
-      });
-    });
-  }
+  //   // Live validation
+  //   form.querySelectorAll('[required]').forEach(function (el) {
+  //     el.addEventListener('input', function () {
+  //       if (this.value.trim()) {
+  //         this.classList.remove('is-invalid');
+  //         this.classList.add('is-valid');
+  //       }
+  //     });
+  //   });
+  // }
 
   /* ============================================
      8. LANGUAGE TOGGLER
