@@ -1506,4 +1506,10 @@ body {
     .navbar-nav.ms-auto.align-items-lg-center {
         margin-top: 4rem;
     }
+    .navbar .logo_ribbon{
+  top: -10px!important;
+}
+.footer .logo_ribbon{
+  top: -9px!important;
+}
 }
