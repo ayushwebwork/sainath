@@ -284,6 +284,7 @@
       background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
       padding: 90px 0;
       position: relative; overflow: hidden;
+      padding-bottom: 0;
     }
     .pan-section::after {
       content: '';
@@ -693,3 +694,11 @@ height: 30rem;
 }
 }
 
+.our_journey_image_wrap{
+  width: 5rem;height: 5rem;border-radius: 1rem;overflow: hidden; flex-shrink: 0;
+  
+}
+.our_journey_image_wrap img{
+  border-radius: 100%;
+  object-fit: cover;
+}
