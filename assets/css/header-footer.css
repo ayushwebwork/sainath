@@ -702,6 +702,9 @@ body {
   object-fit: contain;
 }
 
+.text-justify{
+  text-align: justify;
+}
 @media only screen and (max-width:767px){
 .navbar-nav.ms-auto.align-items-lg-center{
   margin-top: 4rem;

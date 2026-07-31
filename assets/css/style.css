@@ -333,6 +333,7 @@ li.nav-item.dropdown:hover:after{
   background-position: center;
   background-repeat: no-repeat;
 }
+.slide-0 { background-image:url(../images/sainath_inspiration.png) }
 .slide-1 { background-image: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1800&q=80'); }
 .slide-1 { background-image:url(../images/integratedfacilitymanagementexcellence.png) }
 .slide-2 { background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=80'); }
