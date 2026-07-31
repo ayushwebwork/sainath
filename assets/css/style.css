@@ -1403,6 +1403,11 @@ body {
     color: rgba(255,255,255,.8);
 }
 
+.tawk-min-container .tawk-button-circle.tawk-button-large {
+    width: 50px;
+    height: 50px;
+}
+
 /* MOBILE */
 
 @media(max-width:991px){
