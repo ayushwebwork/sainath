@@ -263,23 +263,23 @@
 }
 
 .svc-intro-card-integrated{
-background-image: url("../images/Integrated Facility Management.jpg");
+background-image: url("../images/integrated_facility_mgmt.png");
       background-size: cover;
     background-position: left;
     
 }
 
 .svc-intro-card-housekeeping{
-background-image: url("../images/Housekeeping Excellence.jpg");
+background-image: url("../images/indiagate.png");
       background-size: cover;
-    background-position: left;
+    background-position: top;
     
 }
 
 .svc-intro-card-green{
-background-image: url("../images/green_cleaning.jpeg");
+background-image: url("../images/clean_green.png");
       background-size: cover;
-    background-position: right;
+    /* background-position: right; */
     
 }
 

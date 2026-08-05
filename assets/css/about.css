@@ -617,12 +617,13 @@
 }
 
 .housekeeping{
-    background: url("../images/Housekeeping Excellence.jpg");
+    background: url("../images/indiagate.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
 }
 .Facility{
-    background: url("../images/Integrated Facility Management.jpg");
+    background: url("../images/integrated_facility_mgmt.png");
 background-size: cover;
     background-repeat: no-repeat;
 }
@@ -631,6 +632,7 @@ background-size: cover;
     background: url("../images/garbage_collection.png");
 background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .Manpower{
