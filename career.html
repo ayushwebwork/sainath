@@ -287,6 +287,50 @@
         <button class="btn-view-pos" onclick="openJobModal('tender')"><i class="bi bi-arrow-right-circle-fill"></i> View Position</button>
       </div>
 
+      <div class="job-card fade-up delay-3" data-dept="business-development">
+  <div class="job-card-left">
+    <div class="job-card-top">
+      <h5 class="job-title">Business Development Executive</h5>
+    </div>
+    <div class="job-meta">
+      <span><i class="bi bi-geo-alt-fill"></i> PAN India</span>
+      <span><i class="bi bi-briefcase-fill"></i> Full-Time</span>
+      <span><i class="bi bi-clock-fill"></i> 4–10 Years Experience</span>
+      <span><i class="bi bi-currency-rupee"></i> As per Industry Standards</span>
+    </div>
+    <div class="job-tags">
+      <span class="job-tag">Business Development</span>
+      <span class="job-tag job-tag-navy">Sales & Lead Generation</span>
+      <span class="job-tag job-tag-navy">Tender Management</span>
+    </div>
+  </div>
+  <button class="btn-view-pos" onclick="openJobModal('businessDevelopmentExecutive')">
+    <i class="bi bi-arrow-right-circle-fill"></i> View Position
+  </button>
+</div>
+
+<div class="job-card fade-up delay-3" data-dept="operations">
+  <div class="job-card-left">
+    <div class="job-card-top">
+      <h5 class="job-title">Site In-Charge</h5>
+    </div>
+    <div class="job-meta">
+      <span><i class="bi bi-geo-alt-fill"></i> Rohtak, Haryana</span>
+      <span><i class="bi bi-briefcase-fill"></i> Full-Time</span>
+      <span><i class="bi bi-clock-fill"></i> 3–10 Years Experience</span>
+      <span><i class="bi bi-currency-rupee"></i> As per Industry Standards</span>
+    </div>
+    <div class="job-tags">
+      <span class="job-tag">Operations</span>
+      <span class="job-tag job-tag-navy">Waste Management</span>
+      <span class="job-tag job-tag-navy">Site Supervision</span>
+    </div>
+  </div>
+  <button class="btn-view-pos" onclick="openJobModal('siteInCharge')">
+    <i class="bi bi-arrow-right-circle-fill"></i> View Position
+  </button>
+</div>
+
       <div class="job-card fade-up delay-2" data-dept="hr">
         <div class="job-card-left">
           <div class="job-card-top">
@@ -917,6 +961,8 @@ const jobs = {
     ],
     skills: ['End-to-End Recruitment', 'Bulk Hiring', 'Naukri / LinkedIn', 'Campus Drives', 'ATS', 'HR Coordination']
   },
+  businessDevelopmentExecutive: { title: 'Business Development Executive', live: false, meta: [ { icon: 'bi-geo-alt-fill', text: 'PAN India' }, { icon: 'bi-briefcase-fill', text: 'Full-Time' }, { icon: 'bi-clock-fill', text: '4–10 Years Experience' }, { icon: 'bi-currency-rupee', text: 'Salary: As per Industry Standards' }, { icon: 'bi-building', text: 'Business Development & Sales Department' }, ], about: 'We are seeking a target-oriented Business Development Executive to drive new business opportunities and revenue growth in the Facility Management sector. The role involves lead generation, client acquisition, tender participation, proposal development, client meetings, contract negotiations, and building long-term relationships with government and private-sector clients across India.', responsibilities: [ 'Identify and develop new business opportunities across Facility Management, Housekeeping, Manpower Supply, Security Services, Waste Management, and other IFM services', 'Generate leads through field visits, networking, referrals, cold calling, digital platforms, and market research', 'Build and maintain strong relationships with government departments, PSUs, corporates, educational institutions, hospitals, residential societies, and industrial clients', 'Conduct client meetings, presentations, and site surveys to understand requirements and recommend suitable service solutions', 'Prepare technical proposals, commercial quotations, cost estimates, presentations, and service agreements', 'Identify and coordinate tender opportunities through GeM, CPPP, State e-Procurement Portals, and other procurement platforms', 'Negotiate commercial terms, finalize contracts, and ensure timely closure and successful project handover to the operations team', 'Achieve monthly, quarterly, and annual sales and revenue targets', 'Maintain accurate records of leads, client interactions, opportunities, and sales activities in the CRM', 'Monitor market trends, competitor activities, and upcoming business opportunities to support business growth', 'Develop existing client relationships to drive repeat business, contract renewals, and customer satisfaction', 'Prepare and submit periodic MIS reports, sales forecasts, and pipeline updates to management', ], requirements: [ 'Bachelor’s Degree in Business Administration, Marketing, Commerce, or a related discipline', 'MBA in Marketing or Sales will be an added advantage', '4–10 years of experience in Business Development, Sales, or Marketing, preferably in Facility Management or related industries', 'Experience handling government and private-sector clients is preferred', 'Knowledge of GeM, CPPP, and e-Tendering processes is an added advantage', 'Excellent communication, presentation, negotiation, and relationship management skills', 'Good understanding of Facility Management services and industry practices', 'Proficiency in Microsoft Word, Excel, and PowerPoint', 'Strong analytical, organizational, and time-management skills', 'Willingness to travel extensively for client meetings and site visits', ], skills: ['Business Development', 'Lead Generation', 'Client Relationship Management', 'Tender Management', 'Proposal Development', 'Negotiation', 'Sales & Revenue Growth', 'GeM / E-Tendering'] 
+  },
   mis: {
     title: 'MIS Executive',
     live: false,
@@ -945,6 +991,52 @@ const jobs = {
     ],
     skills: ['Advanced Excel', 'MIS Reporting', 'Power BI', 'Data Analysis', 'Dashboard Design', 'VBA / Macros']
   },
+  siteInCharge: {
+  title: 'Site In-Charge',
+  live: false,
+  meta: [
+    { icon: 'bi-geo-alt-fill', text: 'Rohtak, Haryana' },
+    { icon: 'bi-briefcase-fill', text: 'Full-Time' },
+    { icon: 'bi-clock-fill', text: '3–10 Years Experience' },
+    { icon: 'bi-currency-rupee', text: 'Salary: As per Industry Standards' },
+    { icon: 'bi-building', text: 'Operations & Sanitation Department' },
+  ],
+  about: 'We are seeking an experienced and responsible Site In-Charge to supervise and manage day-to-day door-to-door municipal solid waste collection operations. The role involves manpower and vehicle deployment, route monitoring, waste collection and transportation, public grievance resolution, coordination with municipal officials, and ensuring compliance with project requirements and operational guidelines.',
+  responsibilities: [
+    'Supervise daily door-to-door waste collection operations within the assigned ward or zone',
+    'Ensure 100% route coverage as per the approved route plan and work order',
+    'Monitor waste collection, segregation, transportation, and disposal activities',
+    'Ensure timely deployment of manpower, vehicles, and equipment',
+    'Coordinate with drivers, supervisors, and sanitation workers for smooth daily operations',
+    'Liaise with Municipal Corporation officials and project representatives',
+    'Address and resolve public complaints related to waste collection promptly',
+    'Monitor attendance, workforce deployment, route execution, and operational performance',
+    'Ensure compliance with municipal guidelines, project requirements, and safety procedures',
+    'Support municipal inspections and provide necessary operational updates to management',
+  ],
+  requirements: [
+    'Graduate preferred',
+    '3–10 years of experience in Municipal Solid Waste Management, Facility Management, or Sanitation Operations',
+    'Experience in government or municipal projects will be preferred',
+    'Strong leadership and team management skills',
+    'Good communication, coordination, and problem-solving abilities',
+    'Knowledge of route planning and manpower deployment',
+    'Basic proficiency in MS Excel, MS Word, and Email',
+    'Experience with GPS/RFID monitoring systems is preferred',
+    'Ability to handle public grievances and municipal inspections',
+    'Willingness to work in shifts, including weekends and holidays, as per operational requirements',
+  ],
+  skills: [
+    'Site Operations',
+    'Waste Management',
+    'Manpower Management',
+    'Route Planning',
+    'Team Leadership',
+    'GPS / RFID Monitoring',
+    'Public Grievance Handling',
+    'Municipal Coordination'
+  ]
+},
   accountant: {
     title: 'Accountant',
     live: false,
